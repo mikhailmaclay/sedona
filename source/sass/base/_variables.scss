@@ -5,3 +5,14 @@ $base-transition: 0.25s;
 $half-baked: #81b3d2;
 $fountain-blue: #669ec0;
 $mercury: #e5e5e5;
+
+// Размеры
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+// Медиа-запросы
+$from-tablet: (min-width: $tablet-width);
+$from-desktop: (min-width: $desktop-width);
+$to-tablet: (max-width: ($tablet-width - 1px));
+$to-desktop: (max-width: ($desktop-width - 1px));
