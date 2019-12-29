@@ -1,0 +1,18 @@
+@import "../../base/variables";
+
+.logo-link_html-academy {
+  $color: (default: black, hover: $half-baked, active: rgba(black, 0.3));
+  $transition: $base-transition;
+
+  transition: color $transition;
+
+  color: map-get($color, default);
+
+  &:hover {
+    color: map-get($color, hover);
+  }
+
+  &:active {
+    color: map-get($color, active);
+  }
+}
