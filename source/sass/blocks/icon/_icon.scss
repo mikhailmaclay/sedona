@@ -1,0 +1,10 @@
+@import "../../base/variables";
+
+.icon {
+  $transition: $base-transition;
+
+  transition: opacity $transition;
+}
+
+// Fill
+@import "_fill/icon_fill_current";
