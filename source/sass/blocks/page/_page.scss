@@ -1,3 +1,9 @@
 .page {
   font-family: "PT Sans", "Arial", sans-serif;
+
+  height: 100%;
 }
+
+// Элементы
+@import "__body/page__body";
+@import "__footer/page__footer";

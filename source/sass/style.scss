@@ -3,6 +3,13 @@
 
 // Мелкие самодостаточные блоки
 @import "blocks/button/button";
+@import "blocks/icon/icon";
+
+// Собирательные блоки
+@import "blocks/created-by/created-by";
+@import "blocks/logo-link/logo-link";
+@import "blocks/social/social";
 
 // Структурные блоки
 @import "blocks/page/page";
+@import "blocks/page-footer/page-footer";
