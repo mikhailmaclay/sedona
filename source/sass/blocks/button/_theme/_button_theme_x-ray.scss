@@ -1,0 +1,13 @@
+.button_theme_x-ray {
+  width: auto;
+  height: auto;
+  margin: -5px;
+  padding: 5px;
+
+  background-color: transparent;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+}
