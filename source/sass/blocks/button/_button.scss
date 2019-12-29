@@ -1,0 +1,60 @@
+@import "../../base/variables";
+@import "../../base/mixins";
+
+.button {
+  $background-color: (default: $half-baked, hover: $fountain-blue, active: $fountain-blue, disabled: $mercury);
+  $transition: $base-transition;
+
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: 100%;
+  line-height: 1;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  height: 58px;
+  padding: 0 14px;
+
+  cursor: pointer;
+  user-select: none;
+  transition: background-color $transition, color $transition;
+  vertical-align: top;
+  text-decoration: none;
+
+  color: white;
+  border: none;
+  background-color: map-get($background-color, default);
+
+  &:hover {
+    background-color: map-get($background-color, hover);
+  }
+
+  &:focus {
+    $z-index: map-get($z-index-layers, focus);
+
+    @include outline;
+
+    position: relative;
+    z-index: $z-index;
+  }
+
+  &:active {
+    background-color: map-get($background-color, active);
+  }
+
+  &:disabled {
+    cursor: auto;
+
+    background-color: map-get($background-color, disabled);
+  }
+}
+
+
+// Theme
+@import "_theme/button_theme_square";
+// Элементы
+@import "__icon/button__icon";
+@import "__text/button__text";

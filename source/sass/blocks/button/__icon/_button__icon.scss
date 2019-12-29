@@ -1,0 +1,7 @@
+.button:active .button__icon {
+  opacity: 0.3;
+}
+
+.button:disabled .button__icon {
+  opacity: 1;
+}
