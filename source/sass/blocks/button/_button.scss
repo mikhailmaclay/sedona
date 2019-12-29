@@ -33,10 +33,6 @@
     background-color: map-get($background-color, hover);
   }
 
-  &:focus {
-    @include outline;
-  }
-
   &:active {
     background-color: map-get($background-color, active);
   }
