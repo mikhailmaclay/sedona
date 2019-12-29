@@ -1,0 +1,14 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  min-height: 243px;
+
+  background-color: white;
+}
+
+// Элементы
+@import "__created-by/page-footer__created-by";
+@import "__hashtag/page-footer__hashtag";
+@import "__social/page-footer__social";
