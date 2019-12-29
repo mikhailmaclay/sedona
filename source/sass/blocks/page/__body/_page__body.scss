@@ -1,6 +1,12 @@
+@import "../../../base/variables";
+
 .page__body {
+  $width: $mobile-width;
+
   display: flex;
   flex-direction: column;
 
+  width: $width;
   height: 100%;
+  margin: 0 auto;
 }

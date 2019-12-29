@@ -1,6 +1,11 @@
+@import "../../base/variables";
+
 .page {
+  $min-width: $mobile-width;
+
   font-family: "PT Sans", "Arial", sans-serif;
 
+  min-width: $min-width;
   height: 100%;
 }
 
