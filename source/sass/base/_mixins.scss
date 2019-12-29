@@ -2,3 +2,10 @@
   outline: none;
   box-shadow: 0 0 0 2px rgba(cornflowerblue, 0.5);
 }
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
