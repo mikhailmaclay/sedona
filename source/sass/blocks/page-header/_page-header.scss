@@ -1,0 +1,16 @@
+.page-header {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  min-height: 56px;
+  padding: 0 20px;
+
+  background-color: white;
+}
+
+// Элементы
+@import "__logo/page-header__logo";
+@import "__menu/page-header__menu";
