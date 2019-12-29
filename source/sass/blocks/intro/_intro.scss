@@ -1,0 +1,35 @@
+@import "../../base/variables";
+
+.intro {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 389px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-size: cover;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 26px;
+
+    content: "";
+
+    background-image: url("../img/sprite.svg#bg-intro-triangle-mobile");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 94px;
+  }
+
+  @media #{$retina} {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
