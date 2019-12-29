@@ -1,4 +1,4 @@
-$z-index-layers: (focus: 7);
+$z-index-layers: (focus: 7, header: 6);
 $base-transition: 0.25s;
 
 // Цвета
@@ -16,3 +16,4 @@ $from-tablet: (min-width: $tablet-width);
 $from-desktop: (min-width: $desktop-width);
 $to-tablet: (max-width: ($tablet-width - 1px));
 $to-desktop: (max-width: ($desktop-width - 1px));
+$retina: (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi);
