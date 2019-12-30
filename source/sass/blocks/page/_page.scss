@@ -2,11 +2,18 @@
 
 .page {
   $min-width: $mobile-width;
+  $background-color: $concrete;
 
   font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
 
   min-width: $min-width;
   height: 100%;
+
+  counter-reset: advantages;
+
+  color: $mine-shaft;
+  background-color: $background-color;
 }
 
 // Элементы
