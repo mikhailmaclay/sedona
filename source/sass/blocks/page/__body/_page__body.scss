@@ -9,4 +9,17 @@
   width: $width;
   height: 100%;
   margin: 0 auto;
+
+
+  @media #{$from-tablet} {
+    $width: $tablet-width;
+
+    width: $width;
+  }
+
+  @media #{$from-desktop} {
+    $width: $desktop-width;
+
+    width: $width;
+  }
 }
