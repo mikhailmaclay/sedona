@@ -1,3 +1,9 @@
+@import "../../../base/variables";
+
 .page-footer__social {
   margin-bottom: 40px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 0;
+  }
 }

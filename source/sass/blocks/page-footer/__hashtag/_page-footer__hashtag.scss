@@ -1,11 +1,9 @@
-.page-footer__hashtag {
-  display: block;
+@import "../../../base/variables";
 
+.page-footer__hashtag {
   margin-bottom: 41px;
 
-  text-transform: uppercase;
-
-  &::before {
-    content: "#";
+  @media #{$from-tablet} {
+    margin-bottom: 0;
   }
 }
