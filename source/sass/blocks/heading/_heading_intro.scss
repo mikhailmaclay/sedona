@@ -1,0 +1,14 @@
+@import "../../base/variables";
+
+.heading_intro {
+  font-size: 18px;
+  line-height: 1.4;
+
+  max-width: 255px;
+
+  text-transform: uppercase;
+
+  @media #{$from-tablet} {
+    max-width: 490px;
+  }
+}
