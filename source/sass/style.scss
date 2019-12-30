@@ -1,9 +1,19 @@
 // Шрифты
 @import "base/fonts";
 
+// Помощники
+@import "base/line-breaker";
+@import "base/visually-hidden";
+
+// Текстовые блоки
+@import "blocks/heading/heading";
+@import "blocks/text/text";
+
 // Мелкие самодостаточные блоки
 @import "blocks/button/button";
 @import "blocks/icon/icon";
+@import "blocks/advantage/advantage";
+@import "blocks/feature/feature";
 
 // Собирательные блоки
 @import "blocks/created-by/created-by";
@@ -15,4 +25,6 @@
 @import "blocks/page/page";
 @import "blocks/page-header/page-header";
 @import "blocks/intro/intro";
+@import "blocks/page-main/page-main";
 @import "blocks/page-footer/page-footer";
+@import "blocks/grid/grid";
