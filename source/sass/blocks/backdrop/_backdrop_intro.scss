@@ -1,0 +1,9 @@
+@import "../../base/variables";
+
+.backdrop_intro {
+  top: -389px;
+
+  @media #{$from-tablet} {
+    top: -518px;
+  }
+}

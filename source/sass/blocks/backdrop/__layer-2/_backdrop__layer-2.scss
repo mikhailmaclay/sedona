@@ -1,0 +1,35 @@
+@import "../../../base/variables";
+
+.backdrop__layer-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.backdrop_intro .backdrop__layer-2 {
+  @media #{$to-tablet} {
+    top: auto;
+
+    height: 26px;
+
+    transform: translateY(100%);
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      height: 26px;
+
+      content: "";
+
+      background-image: url("../img/sprite.svg#bg-triangle");
+      background-repeat: no-repeat;
+      background-position: center -49px;
+      background-size: 100% 94px;
+    }
+  }
+}
