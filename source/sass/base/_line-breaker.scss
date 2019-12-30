@@ -1,0 +1,28 @@
+@import "../base/variables";
+
+.line-breaker {
+  display: none;
+
+  &::after {
+    content: "\A";
+    white-space: pre;
+  }
+
+  &_mobile {
+    @media #{$to-tablet} {
+      display: inline;
+    }
+  }
+
+  &_tablet {
+    @media #{$from-tablet} and #{$to-desktop} {
+      display: inline;
+    }
+  }
+
+  &_desktop {
+    @media #{$from-desktop} {
+      display: inline;
+    }
+  }
+}
