@@ -1,11 +1,25 @@
+@import "../../base/variables";
+
 .page-footer {
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  min-height: 243px;
+  box-sizing: border-box;
+  padding: 36px 20px 20px;
 
   background-color: white;
+
+  @media #{$from-tablet} {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 36px 60px;
+  }
+
+  @media #{$from-desktop} {
+    padding: 36px 120px;
+  }
 }
 
 // Элементы
