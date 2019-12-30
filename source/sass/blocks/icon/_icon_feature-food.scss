@@ -1,0 +1,8 @@
+@import "../../base/variables";
+
+.icon_feature-food {
+  @media #{$from-tablet} {
+    width: 77px;
+    height: 68px;
+  }
+}
