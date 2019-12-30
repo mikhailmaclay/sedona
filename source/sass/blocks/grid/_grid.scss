@@ -1,0 +1,14 @@
+@import "../../base/variables";
+
+.grid {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$from-tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+// Элементы
+@import "__cell/grid__cell";

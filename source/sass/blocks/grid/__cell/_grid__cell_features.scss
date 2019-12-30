@@ -1,0 +1,10 @@
+@import "../../../base/variables";
+
+.grid__cell_features {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media #{$to-tablet} {
+    padding: 20px 0;
+  }
+}

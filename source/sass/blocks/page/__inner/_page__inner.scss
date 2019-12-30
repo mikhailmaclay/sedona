@@ -1,0 +1,9 @@
+@import "../../../base/variables";
+
+.page__inner {
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+
+  @media #{$from-desktop} {
+    margin: 0 40px;
+  }
+}
