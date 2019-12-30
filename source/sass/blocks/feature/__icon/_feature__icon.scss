@@ -1,0 +1,21 @@
+@import "../../../base/variables";
+@import "../variables";
+
+.feature__icon {
+  @media #{$to-tablet} {
+    $top: $padding;
+    $left: $padding;
+
+    position: absolute;
+    top: $top;
+    left: $left;
+
+    flex-shrink: 0;
+
+    transform: translateY(-25%);
+  }
+
+  @media #{$from-tablet} {
+    margin-bottom: 32px;
+  }
+}

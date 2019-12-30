@@ -1,0 +1,19 @@
+@import "../../base/variables";
+
+.advantage_special {
+  padding: 0;
+
+  background-color: transparent;
+
+  &::before {
+    display: none;
+  }
+
+  @media #{$from-tablet} {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    min-height: auto;
+  }
+}
