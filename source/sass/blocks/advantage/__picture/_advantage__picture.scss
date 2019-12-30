@@ -1,0 +1,22 @@
+@import "../../../base/variables";
+
+.advantage_special .advantage__picture {
+  overflow: hidden;
+
+  width: 100%;
+
+  @media #{$from-tablet} {
+    order: 0;
+
+    width: calc((100% / 3) * 2);
+    height: 256px;
+  }
+}
+
+.advantage_special.advantage_reverse .advantage__picture {
+  order: 2;
+
+  @media #{$from-tablet} {
+    order: 0;
+  }
+}

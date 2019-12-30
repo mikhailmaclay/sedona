@@ -1,0 +1,7 @@
+@import "../../base/variables";
+
+.advantage_special.advantage_reverse {
+  @media #{$from-tablet} {
+    flex-direction: row-reverse;
+  }
+}
