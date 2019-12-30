@@ -1,0 +1,7 @@
+@import "../../../base/variables";
+
+.page__navigation {
+  @media #{$from-desktop} {
+    margin: 0 40px;
+  }
+}
