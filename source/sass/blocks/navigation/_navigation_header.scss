@@ -2,6 +2,7 @@
 
 .navigation_header {
   display: none;
+  overflow: hidden;
 
   @media #{$from-tablet} {
     display: block;
