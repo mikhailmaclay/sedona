@@ -1,0 +1,12 @@
+.link {
+  font-weight: bold;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: inherit;
+
+  &:not([href]) {
+    cursor: no-drop;
+  }
+}

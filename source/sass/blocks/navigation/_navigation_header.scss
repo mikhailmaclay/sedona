@@ -1,0 +1,11 @@
+@import "../../base/variables";
+
+.navigation_header {
+  display: none;
+
+  @media #{$from-tablet} {
+    display: block;
+
+    width: 100%;
+  }
+}

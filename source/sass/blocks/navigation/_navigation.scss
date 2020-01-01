@@ -1,7 +1,15 @@
 .navigation {
   position: relative;
+
+  display: none;
 }
+
+// Boolean
+@import "navigation_header";
+@import "navigation_no-js";
+@import "navigation_visible";
 
 // Элементы
 @import "__close/navigation__close";
 @import "__list/navigation__list";
+@import "__list-item/navigation__list-item";
