@@ -1,8 +1,6 @@
 @import "../../base/variables";
 
 .text_feature {
-  line-height: 1.5;
-
   text-transform: uppercase;
 
   @media #{$from-tablet} {
