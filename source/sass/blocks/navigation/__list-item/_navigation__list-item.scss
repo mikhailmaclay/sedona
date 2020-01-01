@@ -1,0 +1,30 @@
+@import "../../../base/variables";
+
+.navigation_header .navigation__list-item {
+  margin-right: 50px;
+  margin-bottom: 25px;
+
+  &:nth-child(1) {
+    margin-right: 77px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 209px;
+  }
+
+  @media #{$from-desktop} {
+    margin-right: 162px;
+
+    &:nth-child(1) {
+      margin-right: 162px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 382px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 137px;
+    }
+  }
+}

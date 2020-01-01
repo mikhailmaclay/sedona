@@ -1,3 +1,5 @@
+@import "../../base/variables";
+
 .page-header {
   position: relative;
 
@@ -5,10 +7,19 @@
   align-items: center;
   flex-wrap: wrap;
 
+  box-sizing: border-box;
   min-height: 56px;
-  padding: 0 20px;
+  padding: 10px 20px;
 
   background-color: white;
+
+  @media #{$from-tablet} {
+    padding: 10px 26px 10px 49px;
+  }
+
+  @media #{$from-desktop} {
+    padding: 10px 70px 10px 91px;
+  }
 }
 
 // Элементы

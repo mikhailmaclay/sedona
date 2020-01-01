@@ -1,0 +1,9 @@
+.button_menu {
+  @media #{$from-tablet} {
+    display: none;
+  }
+}
+
+.button_menu.button_no-js {
+  display: none;
+}
