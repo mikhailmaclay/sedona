@@ -1,0 +1,9 @@
+@import "../../base/variables";
+
+.button_cta {
+  width: 100%;
+
+  @media #{$from-tablet} {
+    width: 459px;
+  }
+}

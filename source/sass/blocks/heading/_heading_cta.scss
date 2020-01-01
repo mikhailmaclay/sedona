@@ -1,0 +1,13 @@
+@import "../../base/variables";
+
+.heading_cta {
+  font-size: 21px;
+  line-height: 1.2;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media #{$from-tablet} {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../base/variables";
+
+.cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 33px 20px 49px;
+
+  @media #{$from-tablet} {
+    padding: 57px 60px 58px;
+  }
+
+  @media #{$from-desktop} {
+    padding: 57px 120px 66px;
+  }
+}
+
+// Элементы
+@import "__description/cta__description";
+@import "__heading/cta__heading";

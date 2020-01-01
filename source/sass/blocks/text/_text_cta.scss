@@ -1,0 +1,12 @@
+@import "../../base/variables";
+
+.text_cta {
+  max-width: 261px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media #{$from-tablet} {
+    max-width: 435px;
+  }
+}

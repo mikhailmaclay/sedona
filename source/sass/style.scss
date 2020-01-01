@@ -22,10 +22,13 @@
 @import "blocks/navigation/navigation";
 @import "blocks/social/social";
 
+// Контекстные семантические блоки
+@import "blocks/intro/intro";
+@import "blocks/cta/cta";
+
 // Структурные блоки
 @import "blocks/page/page";
 @import "blocks/page-header/page-header";
-@import "blocks/intro/intro";
 @import "blocks/page-main/page-main";
 @import "blocks/page-footer/page-footer";
 @import "blocks/grid/grid";
