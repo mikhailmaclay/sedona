@@ -41,10 +41,13 @@
   </nav>
   <div class="page__inner">
     <header class="page-header">
-      <a class="page-header__logo logo-link" aria-label="Седона">
-        <svg class="logo-link__image" width="102" height="85">
-          <use xlink:href="img/sprite.svg#logo-sedona-mobile"></use>
-        </svg>
+      <a class="page-header__logo logo-link logo-link_main" aria-label="Седона">
+        <picture>
+          <source srcset="img/sprite.svg#logo-sedona-desktop" media="(min-width: 1280px)">
+          <source srcset="img/sprite.svg#logo-sedona-tablet" media="(min-width: 768px)">
+          <source srcset="img/sprite.svg#logo-sedona-mobile">
+          <img class="logo-link__image" src="img/sprite.svg#logo-sedona-mobile" alt="Седона" width="102" height="83">
+        </picture>
       </a>
       <button class="page-header__menu button button_theme_x-ray" type="button">
         <svg class="button_icon icon icon_fill_half-baked" width="23" height="21">
