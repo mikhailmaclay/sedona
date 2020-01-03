@@ -26,6 +26,10 @@
     font-size: 21px;
 
     max-width: 150px;
+
+    &::after {
+      margin-top: 7px;
+    }
   }
 }
 
@@ -33,6 +37,8 @@
   color: white;
 
   &::after {
+    margin-top: 10px;
+
     color: white;
   }
 }

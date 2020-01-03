@@ -24,7 +24,7 @@
     clip-path: $clip-path;
 
     @media #{$from-desktop} {
-      clip-path: polygon(71px 0, 258px 0%, 258px 100%, 71px 100%);;
+      clip-path: polygon(71px 0, 258px 0%, 258px 100%, 71px 100%);
     }
   }
 }

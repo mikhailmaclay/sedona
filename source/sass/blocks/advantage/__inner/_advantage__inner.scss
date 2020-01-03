@@ -2,21 +2,37 @@
 
 .advantage_special .advantage__inner {
   $background-color: $half-baked;
-  $padding: 32px, 20px;
 
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 
   box-sizing: border-box;
   min-height: 191px;
-  padding: nth($padding, 1) nth($padding, 2);
+  padding: 40px 20px;
 
   background-color: $background-color;
 
   @media #{$from-tablet} {
     width: calc(100% / 3);
     min-height: 256px;
+  }
+
+  @media #{$from-desktop} {
+    padding-top: 48px;
+  }
+}
+
+.advantage_special.advantage_first .advantage__inner {
+  padding-top: 56px;
+  padding-bottom: 42px;
+
+  @media #{$from-tablet} {
+    padding-top: 42px;
+  }
+
+  @media #{$from-desktop} {
+    // Дублирую
+    padding-top: 48px;
   }
 }

@@ -4,7 +4,9 @@
   display: flex;
   flex-wrap: wrap;
 
+  box-sizing: border-box;
+
   @media #{$to-tablet} {
-    padding: 20px 0;
+    padding: 35px 20px;
   }
 }

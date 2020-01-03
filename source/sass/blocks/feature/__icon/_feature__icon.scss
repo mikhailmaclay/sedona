@@ -2,20 +2,16 @@
 @import "../variables";
 
 .feature__icon {
-  @media #{$to-tablet} {
-    $top: $padding;
-    $left: $padding;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    position: absolute;
-    top: $top;
-    left: $left;
-
-    flex-shrink: 0;
-
-    transform: translateY(-25%);
-  }
+  transform: translateY(-25%);
 
   @media #{$from-tablet} {
-    margin-bottom: 32px;
+    top: 60px;
+    left: 50%;
+
+    transform: translateX(-50%);
   }
 }
