@@ -1,0 +1,8 @@
+@import "../../base/variables";
+
+.intro_small {
+  $border-color: $mercury;
+
+  border-top-width: 158px;
+  border-bottom: 1px solid $border-color;
+}
