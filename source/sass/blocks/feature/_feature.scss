@@ -7,12 +7,10 @@
   display: flex;
 
   box-sizing: border-box;
-  padding: $padding;
 
   @media #{$from-tablet} {
     align-items: center;
     flex-direction: column;
-    justify-content: center;
 
     min-height: 330px;
   }

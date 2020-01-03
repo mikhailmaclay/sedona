@@ -2,7 +2,7 @@
 
 .advantage {
   $background-color: $gallery;
-  $padding: 32px, 20px;
+  $padding: 28px, 20px;
 
   position: relative;
 
@@ -35,9 +35,8 @@
   }
 
   @media #{$from-tablet} {
-    justify-content: center;
-
     min-height: 256px;
+    padding-top: 42px;
   }
 }
 

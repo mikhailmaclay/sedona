@@ -1,0 +1,7 @@
+@import "../../../base/variables";
+
+.advantage__image_main-bridge {
+  @media #{$from-desktop} {
+    transform: translateY(-77px);
+  }
+}

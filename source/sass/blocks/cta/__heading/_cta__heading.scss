@@ -1,3 +1,9 @@
+@import "../../../base/variables";
+
 .cta__heading {
-  margin: 0 0 20px;
+  margin: 0 0 17px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 26px;
+  }
 }

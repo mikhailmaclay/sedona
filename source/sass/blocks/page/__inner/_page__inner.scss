@@ -1,6 +1,11 @@
 @import "../../../base/variables";
 
 .page__inner {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 
   @media #{$from-desktop} {

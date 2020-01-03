@@ -1,8 +1,13 @@
+@import "../../../base/variables";
+
 .button__text {
+  $transition: $base-transition;
+
   overflow: hidden;
 
   max-width: 100%;
 
+  transition: opacity $transition;
   white-space: nowrap;
   text-overflow: ellipsis;
   pointer-events: none;

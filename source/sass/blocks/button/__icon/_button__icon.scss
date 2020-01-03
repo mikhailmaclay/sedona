@@ -1,4 +1,10 @@
+@import "../../../base/variables";
+
 .button:active .button__icon {
+  $transition: $base-transition;
+
+  transition: opacity $transition;
+
   opacity: 0.3;
 }
 
