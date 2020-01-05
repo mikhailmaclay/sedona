@@ -1,9 +1,0 @@
-@import "../../../base/variables";
-
-.intro__inner {
-  $z-index: map-get($z-index-layers, content);
-
-  z-index: $z-index;
-
-  padding: 49px 30px 50px;
-}

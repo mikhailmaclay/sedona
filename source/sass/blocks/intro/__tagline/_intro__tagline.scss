@@ -1,12 +1,25 @@
 @import "../../../base/variables";
 
 .intro__tagline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.intro_big .intro__tagline {
+  transform: translate(-50%, calc(-50% - 7px));
+
   @media #{$from-tablet} {
     width: 460px;
     height: 350px;
   }
 }
 
-.intro_index .intro__tagline {
-  transform: translateY(-7px);
+.intro_small .intro__tagline {
+  @media #{$from-tablet} {
+    width: 460px;
+    height: 80px;
+  }
 }

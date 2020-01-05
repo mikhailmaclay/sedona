@@ -3,23 +3,36 @@
 .intro {
   position: relative;
 
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  border-top: 389px solid transparent;
   background-color: white;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+
+  @media #{$retina} {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 
   @media #{$from-tablet} {
-    border-top-width: 518px;
+    min-height: 518px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+  }
+
+  @media #{$from-tablet} and #{$retina} {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+  }
+
+  @media #{$from-desktop} {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  @media #{$from-desktop} and #{$retina} {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
   }
 }
 
 // Boolean
+@import "intro_big";
 @import "intro_small";
 
 // Элементы
-@import "__heading/intro__heading";
-@import "__description/intro__description";
-@import "__inner/intro__inner";
 @import "__tagline/intro__tagline";
