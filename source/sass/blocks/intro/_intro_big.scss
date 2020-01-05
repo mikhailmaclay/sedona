@@ -6,4 +6,10 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 250%;
+
+  @media #{$from-tablet} {
+    min-height: 518px;
+
+    background-size: cover;
+  }
 }
