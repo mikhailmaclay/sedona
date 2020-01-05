@@ -11,3 +11,12 @@
 .button:disabled .button__icon {
   opacity: 1;
 }
+
+a.button:not([href]) {
+  &:hover,
+  &:active {
+    .button__icon {
+      opacity: 1;
+    }
+  }
+}

@@ -44,6 +44,14 @@
   }
 }
 
+a.button:not([href]) {
+  &:hover,
+  &:active {
+    background-color: $half-baked;
+    cursor: no-drop;
+  }
+}
+
 // Theme
 @import "_theme/button_theme_checkbox";
 @import "_theme/button_theme_radio";

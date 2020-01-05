@@ -20,3 +20,12 @@
 .button:disabled .button__text {
   opacity: 1;
 }
+
+a.button:not([href]) {
+  &:hover,
+  &:active {
+    .button__text {
+      opacity: 1;
+    }
+  }
+}
