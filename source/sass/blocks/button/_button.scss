@@ -45,6 +45,8 @@
 }
 
 // Theme
+@import "_theme/button_theme_checkbox";
+@import "_theme/button_theme_radio";
 @import "_theme/button_theme_square";
 @import "_theme/button_theme_x-ray";
 
@@ -56,3 +58,4 @@
 // Элементы
 @import "__icon/button__icon";
 @import "__text/button__text";
+@import "__tick/button__tick";
