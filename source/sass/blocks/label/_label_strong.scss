@@ -1,0 +1,10 @@
+.label_strong {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.45;
+  text-transform: none;
+
+  &::after {
+    content: none;
+  }
+}

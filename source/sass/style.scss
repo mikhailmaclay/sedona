@@ -7,6 +7,7 @@
 
 // Текстовые блоки
 @import "blocks/heading/heading";
+@import "blocks/label/label";
 @import "blocks/link/link";
 @import "blocks/text/text";
 
@@ -18,6 +19,8 @@
 
 // Собирательные блоки
 @import "blocks/created-by/created-by";
+@import "blocks/fieldset/fieldset";
+@import "blocks/input/input";
 @import "blocks/logo-link/logo-link";
 @import "blocks/navigation/navigation";
 @import "blocks/social/social";
