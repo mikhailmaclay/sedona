@@ -6,6 +6,7 @@
   width: 46px;
   height: 46px;
   padding: 0;
+
   border-radius: 50%;
   background-color: $background-color;
 
@@ -34,6 +35,7 @@
 }
 
 .input__input:disabled + .button_theme_radio {
-  opacity: 0.3;
   cursor: auto;
+
+  opacity: 0.3;
 }
