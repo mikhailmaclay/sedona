@@ -1,8 +1,15 @@
 @import "../../base/variables";
 
 .intro_small {
-  $border-color: $mercury;
+  min-height: 158px;
 
-  border-top-width: 158px;
-  border-bottom: 1px solid $border-color;
+  background-position: 50% 100%;
+
+  @media #{$from-tablet} {
+    min-height: 290px;
+  }
+
+  @media #{$from-desktop} {
+    min-height: 301px;
+  }
 }
