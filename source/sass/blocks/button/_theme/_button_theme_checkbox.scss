@@ -1,0 +1,39 @@
+@import "../../../base/variables";
+
+.button_theme_checkbox {
+  $background-color: $concrete;
+
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border-radius: 5px;
+  background-color: $background-color;
+
+  &:hover,
+  &:active {
+    background-color: $background-color;
+  }
+}
+
+.input__input:not(:disabled) + .button_theme_checkbox {
+  &:hover {
+    $background-color: $mercury;
+
+    background-color: $background-color;
+  }
+
+  &:active {
+    $background-color: $alto;
+
+    background-color: $background-color;
+  }
+}
+
+.input__input:focus + .button_theme_checkbox {
+  outline: -webkit-focus-ring-color auto 2px;
+}
+
+.input__input:disabled + .button_theme_checkbox {
+  opacity: 0.3;
+  cursor: auto;
+}

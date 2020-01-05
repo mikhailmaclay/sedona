@@ -1,0 +1,3 @@
+.input__input:not(:disabled) ~ .input__label {
+  cursor: pointer;
+}
