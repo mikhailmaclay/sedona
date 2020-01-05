@@ -47,8 +47,9 @@
 a.button:not([href]) {
   &:hover,
   &:active {
-    background-color: $half-baked;
     cursor: no-drop;
+
+    background-color: $half-baked;
   }
 }
 

@@ -6,10 +6,11 @@
 
   width: 16px;
   height: 16px;
-  background-color: $background-color;
-  border-radius: 50%;
 
   transition: opacity $transition;
+
+  border-radius: 50%;
+  background-color: $background-color;
 }
 
 .input__input + .input__button .button__tick {

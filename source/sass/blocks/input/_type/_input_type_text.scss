@@ -4,15 +4,17 @@
   $color: (default: inherit, invalid: red);
   $background-color: (default: $concrete, hover: $mercury, active: transparent, invalid: rgba(red, 0.1));
 
-  box-sizing: border-box;
-  height: 58px;
   font: inherit;
   font-size: 18px;
-  line-height: 1;
   font-weight: bold;
-  background-color: map-get($background-color, default);
-  border: none;
+  line-height: 1;
+
+  box-sizing: border-box;
+  height: 58px;
   padding: 0 22px;
+
+  border: none;
+  background-color: map-get($background-color, default);
 
   &:hover {
     background-color: map-get($background-color, hover);
@@ -21,9 +23,10 @@
   &:focus {
     $border-color: map-get($background-color, hover);
 
-    background-color: map-get($background-color, active);
-    border: 4px solid $border-color;
     padding: 18px;
+
+    border: 4px solid $border-color;
+    background-color: map-get($background-color, active);
 
     &:invalid {
       border-color: red;
