@@ -1,25 +1,11 @@
-@import "../../../base/variables";
+@import "../../base/variables";
 
-.backdrop__layer-2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.backdrop_intro .backdrop__layer-2 {
+.collar_top {
   @media #{$to-tablet} {
-    top: auto;
-
-    height: 26px;
-
-    transform: translateY(100%);
-
     &::after {
       position: absolute;
+      top: 0;
       right: 0;
-      bottom: 0;
       left: 0;
 
       height: 26px;
@@ -32,8 +18,4 @@
       background-size: 100% 94px;
     }
   }
-}
-
-.intro_small .backdrop__layer-2 {
-  display: none;
 }
