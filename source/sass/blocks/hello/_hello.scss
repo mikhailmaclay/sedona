@@ -1,0 +1,12 @@
+.hello {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding: 49px 30px 50px;
+}
+
+// Элементы
+@import "__description/hello__description";
+@import "__heading/hello__heading";
