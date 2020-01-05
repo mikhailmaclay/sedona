@@ -1,0 +1,13 @@
+.label {
+  user-select: none;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  &::after {
+    content: ":";
+  }
+}
+
+// Boolean
+@import "label_required";
+@import "label_strong";
