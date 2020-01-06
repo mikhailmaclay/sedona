@@ -5,8 +5,14 @@
 
   position: absolute;
   z-index: $z-index;
-  top: 0;
+  top: calc(100%);
   left: 50%;
 
-  transform: translateX(-50%);
+  transform: translate(-50%, -56px);
+
+  @media #{$from-tablet} {
+    top: 0;
+
+    transform: translateX(-50%);
+  }
 }

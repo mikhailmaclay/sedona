@@ -1,15 +1,21 @@
 @import "../../../base/variables";
 
 .navigation_header .navigation__list-item {
-  margin-right: 50px;
-  margin-bottom: 25px;
+  @media #{$from-tablet} {
+    display: inline-flex;
 
-  &:nth-child(1) {
-    margin-right: 75px;
-  }
+    margin-right: 50px;
+    margin-bottom: 25px;
 
-  &:nth-child(2) {
-    margin-right: 210px;
+    vertical-align: top;
+
+    &:nth-child(1) {
+      margin-right: 75px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 210px;
+    }
   }
 
   @media #{$from-desktop} {

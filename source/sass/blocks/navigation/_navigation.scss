@@ -1,7 +1,13 @@
+@import "../../base/variables";
+
 .navigation {
   position: relative;
 
-  display: none;
+  @media #{$to-tablet} {
+    display: none;
+
+    width: calc(100% + 40px);
+  }
 }
 
 // Boolean

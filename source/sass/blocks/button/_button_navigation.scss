@@ -1,9 +1,41 @@
+@import "../../base/variables";
+
 .button_navigation {
-  font-size: 18px;
+  @media #{$to-tablet} {
+    font-size: 18px;
 
-  width: 100%;
-  height: 56px;
+    width: 100%;
+    height: 56px;
 
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+  }
+
+  @media #{$from-tablet} {
+    font-size: 14px;
+    font-weight: bold;
+
+    height: auto;
+    padding: 0;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: inherit;
+    background-color: transparent;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+    }
+  }
+}
+
+a.button:not([href]) {
+  &:hover,
+  &:active {
+    @media #{$from-tablet} {
+      background-color: transparent;
+    }
+  }
 }
