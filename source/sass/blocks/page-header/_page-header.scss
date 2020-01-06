@@ -8,12 +8,12 @@
   flex-wrap: wrap;
 
   box-sizing: border-box;
-  min-height: 56px;
-  padding: 10px 20px;
+  padding: 18px 20px;
 
   background-color: white;
 
   @media #{$from-tablet} {
+    min-height: 56px;
     padding: 10px 26px 10px 49px;
   }
 
@@ -25,3 +25,4 @@
 // Элементы
 @import "__logo/page-header__logo";
 @import "__menu/page-header__menu";
+@import "__navigation/page-header__navigation";

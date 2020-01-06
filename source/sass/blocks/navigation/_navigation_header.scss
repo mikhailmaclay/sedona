@@ -1,12 +1,7 @@
 @import "../../base/variables";
 
 .navigation_header {
-  display: none;
-  overflow: hidden;
-
   @media #{$from-tablet} {
-    display: block;
-
-    width: 100%;
+    overflow: hidden;
   }
 }

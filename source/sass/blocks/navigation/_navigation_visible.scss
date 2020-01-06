@@ -1,3 +1,7 @@
+@import "../../base/variables";
+
 .navigation_visible {
-  display: block;
+  @media #{$to-tablet} {
+    display: block;
+  }
 }

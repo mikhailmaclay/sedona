@@ -2,8 +2,4 @@
 
 .navigation_no-js {
   display: block;
-
-  @media #{$from-tablet} {
-    display: none;
-  }
 }
