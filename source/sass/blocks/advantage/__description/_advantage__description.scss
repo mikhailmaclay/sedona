@@ -1,3 +1,7 @@
 .advantage__description {
   margin: 0;
 }
+
+.page_ie11 .advantage__description {
+  max-width: 100%;
+}
