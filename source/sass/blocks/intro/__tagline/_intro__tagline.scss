@@ -9,11 +9,11 @@
 }
 
 .intro_big .intro__tagline {
-  transform: translate(-50%, calc(-50% - 7px));
-
   @media #{$from-tablet} {
     width: 460px;
     height: 350px;
+
+    transform: translate(-50%, calc(-50% - 7px));
   }
 }
 

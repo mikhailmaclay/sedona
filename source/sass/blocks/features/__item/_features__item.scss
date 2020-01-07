@@ -3,7 +3,19 @@
 .features__item {
   &:not(:only-child):not(:last-child) {
     @media #{$to-tablet} {
-      margin-bottom: 38px;
+      margin-bottom: 27px;
+    }
+
+    &:nth-child(3) {
+      @media #{$from-tablet} {
+        order: 2;
+      }
+    }
+
+    &:nth-child(4) {
+      @media #{$from-tablet} {
+        order: 3;
+      }
     }
   }
 }
