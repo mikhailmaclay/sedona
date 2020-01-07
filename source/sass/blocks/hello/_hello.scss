@@ -1,10 +1,17 @@
+@import "../../base/variables";
+
 .hello {
   display: flex;
   align-items: center;
   flex-direction: column;
 
   box-sizing: border-box;
-  padding: 49px 30px 50px;
+  padding: 40px 30px 27px;
+
+  @media #{$from-tablet} {
+    padding-top: 48px;
+    padding-bottom: 49px;
+  }
 }
 
 // Элементы

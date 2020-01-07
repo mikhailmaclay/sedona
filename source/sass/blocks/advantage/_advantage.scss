@@ -2,7 +2,7 @@
 
 .advantage {
   $background-color: $gallery;
-  $padding: 28px, 20px;
+  $padding: 26px, 20px;
 
   position: relative;
 
@@ -11,7 +11,7 @@
   flex-direction: column;
 
   box-sizing: border-box;
-  padding: nth($padding, 1) nth($padding, 2);
+  padding: nth($padding, 1) nth($padding, 2) 29px;
 
   counter-increment: advantages;
   text-align: center;
