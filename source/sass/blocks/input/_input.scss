@@ -4,6 +4,11 @@
 @import "_type/input_type_text";
 @import "_type/input_type_textarea";
 
+// Boolean
+@import "input_iconed";
+
 // Элементы
 @import "__button/input__button";
+@import "__icon/input__icon";
+@import "__input/input__input";
 @import "__label/input__label";

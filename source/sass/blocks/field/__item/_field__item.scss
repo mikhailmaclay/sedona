@@ -1,10 +1,16 @@
 .field__item {
   &.label:first-child {
+    align-self: flex-start;
+
     margin: 0 0 14px 22px;
   }
 }
 
 .field_row .field__item {
+  &.label:first-child {
+    align-self: center;
+  }
+
   &:not(:only-child):first-child {
     margin: 0 16px 0 0;
 
