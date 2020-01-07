@@ -12,21 +12,33 @@
   }
 
   @media #{$from-tablet} {
+    $transition: $base-transition;
+    $color: (default: black, hover: $half-baked, active: rgba(black, 0.3));
+
     font-size: 14px;
     font-weight: bold;
 
     height: auto;
     padding: 0;
 
+    transition: color $transition;
     text-decoration: none;
     text-transform: uppercase;
 
-    color: inherit;
+    color: map-get($color, default);
     background-color: transparent;
 
     &:hover,
     &:active {
       background-color: transparent;
+    }
+
+    &:hover {
+      color: map-get($color, hover);
+    }
+
+    &:active {
+      color: map-get($color, active);
     }
   }
 }
@@ -35,6 +47,7 @@ a.button:not([href]) {
   &:hover,
   &:active {
     @media #{$from-tablet} {
+      color: black;
       background-color: transparent;
     }
   }
