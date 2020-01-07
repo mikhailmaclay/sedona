@@ -1,0 +1,9 @@
+@import "../../../base/variables";
+
+.features__item {
+  &:not(:only-child):not(:last-child) {
+    @media #{$to-tablet} {
+      margin-bottom: 38px;
+    }
+  }
+}

@@ -1,4 +1,13 @@
+@import "../../base/variables";
+
 .features {
   display: flex;
   flex-wrap: wrap;
+
+  @media #{$to-tablet} {
+    padding: 42px 20px;
+  }
 }
+
+// Элементы
+@import "__item/features__item";
