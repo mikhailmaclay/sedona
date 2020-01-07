@@ -1,0 +1,13 @@
+@import "../../../base/variables";
+
+.fieldset__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.fieldset_attractions .fieldset__item {
+  @media #{$from-tablet} and #{$to-desktop} {
+    margin-right: 20px;
+  }
+}

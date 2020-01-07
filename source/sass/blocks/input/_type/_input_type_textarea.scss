@@ -1,8 +1,9 @@
 @import "../../../base/variables";
 
-.input_type_text {
+.input_type_textarea {
+  $transition: $base-transition;
   $color: (default: inherit, invalid: red);
-  $background-color: (default: $concrete, hover: $mercury, active: transparent, invalid: rgba(red, 0.1));
+  $background-color: (default: $concrete, hover: $mercury, active: transparent);
 
   font: inherit;
   font-size: 18px;
@@ -11,8 +12,11 @@
 
   box-sizing: border-box;
   width: 100%;
-  height: 58px;
-  padding: 0 22px;
+  min-height: 160px;
+  padding: 22px;
+
+  resize: none;
+  transition: background-color $transition;
 
   border: none;
   background-color: map-get($background-color, default);
@@ -29,15 +33,6 @@
     border: 4px solid $border-color;
     outline: none;
     background-color: map-get($background-color, active);
-
-    &:invalid {
-      border-color: red;
-    }
-  }
-
-  &:invalid {
-    color: map-get($color, invalid);
-    background-color: map-get($background-color, invalid);
   }
 
   &::placeholder {

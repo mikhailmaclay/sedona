@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="page page_review" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Седона / Отзыв</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+  <h1 class="visually-hidden">Седона / Отзыв</h1>
+  <div class="page__inner">
+    <header class="page-header">
+      <nav class="page-header__navigation navigation navigation_header">
+        <h2 class="visually-hidden">Навигация</h2>
+        <ul class="navigation__list">
+          <li class="navigation__list-item"><a class="button button_navigation" href="index.html">Главная</a></li>
+          <li class="navigation__list-item"><a class="button button_navigation" href="media-gallery.html">Фото и видео</a></li>
+          <li class="navigation__list-item"><a class="button button_navigation">Форма отзыва</a></li>
+          <li class="navigation__list-item"><a class="button button_navigation" href="http://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+        <button class="navigation__close button button_theme_x-ray" type="button" aria-label="Закрыть">
+          <svg class="button_icon icon icon_fill_white" width="23" height="22">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </nav>
+      <a class="page-header__logo logo-link logo-link_main" aria-label="Седона" href="index.html" tabindex="-1">
+        <picture>
+          <source srcset="img/sprite.svg#logo-sedona-desktop" media="(min-width: 1280px)">
+          <source srcset="img/sprite.svg#logo-sedona-tablet" media="(min-width: 768px)">
+          <source srcset="img/sprite.svg#logo-sedona-mobile">
+          <img class="logo-link__image" src="img/sprite.svg#logo-sedona-mobile" alt="Седона" width="102" height="83">
+        </picture>
+      </a>
+      <button class="page-header__menu button button_theme_x-ray button_menu button_no-js" type="button">
+        <svg class="button_icon icon icon_fill_half-baked" width="23" height="21">
+          <use xlink:href="img/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </header>
+    <div class="intro intro_small collar collar_bottom">
+      <svg class="intro__tagline" width="230" height="40">
+        <use xlink:href="img/sprite.svg#text-sedona"></use>
+      </svg>
+    </div>
+    <main class="page__main page-main">
+      <div class="hello">
+        <b class="hello__heading heading heading_intro">Оставьте свой отзыв</b>
+        <p class="hello__description text text_intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      <form class="form form_review" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="visually-hidden">Форма отзыва</h2>
+        <div class="form__item form__item_introduce container width_1/2">
+          <fieldset class="fieldset">
+            <legend class="fieldset__heading heading heading_fieldset">Представьтесь</legend>
+            <div class="fieldset__item">
+              <div class="field field_row">
+                <label class="field__item label label_required" for="name">Имя</label>
+                <input class="field__item input input_type_text" id="name" name="name" type="text" placeholder="Петр">
+              </div>
+            </div>
+            <div class="fieldset__item">
+              <div class="field field_row">
+                <label class="field__item label label_required" for="surname">Фамилия</label>
+                <input class="field__item input input_type_text" id="surname" name="surname" type="text" placeholder="Иванов">
+              </div>
+            </div>
+            <div class="fieldset__item">
+              <div class="field field_row">
+                <label class="field__item label" for="patronym">Отчество</label>
+                <input class="field__item input input_type_text" id="patronym" name="patronym" type="text" placeholder="Александрович">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__item container width">
+          <fieldset class="fieldset fieldset_border">
+            <legend class="fieldset__heading heading heading_fieldset">Контактная информация</legend>
+            <div class="fieldset__item">
+              <div class="field">
+                <label class="field__item label label_required" for="phone">Контактный телефон</label>
+                <input class="field__item input input_type_text" id="phone" name="phone" type="text" placeholder="Введите телефон">
+              </div>
+            </div>
+            <div class="fieldset__item">
+              <div class="field">
+                <label class="field__item label label_required" for="email">Электронная почта</label>
+                <input class="field__item input input_type_text" id="email" name="email" type="email" placeholder="Введите e-mail">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__item form__item_separator form__item_impression container width_1/2">
+          <fieldset class="fieldset">
+            <legend class="fieldset__heading heading heading_fieldset heading_no-wrap">Ваше общее впечатление</legend>
+            <div class="fieldset__item">
+              <div class="field field_row">
+                  <span class="field__item input input_type_radio">
+                    <input class="input__input visually-hidden" id="impression-1" name="impression" type="radio"
+                           value="positive" checked>
+                    <label class="input__button button button_theme_radio" for="impression-1">
+                      <span class="button__tick"></span>
+                    </label>
+                  </span>
+                <label class="field__item input__label label label_strong" for="impression-1">Скорее положительное</label>
+              </div>
+            </div>
+            <div class="fieldset__item">
+              <div class="field field_row">
+                  <span class="field__item input input_type_radio">
+                    <input class="input__input visually-hidden" id="impression-2" name="impression" type="radio" value="negative">
+                    <label class="input__button button button_theme_radio" for="impression-2">
+                      <span class="button__tick"></span>
+                    </label>
+                  </span>
+                <label class="field__item input__label label label_strong" for="impression-2">Скорее негативное</label>
+              </div>
+            </div>
+            <div class="fieldset__item">
+              <div class="field field_row">
+                  <span class="field__item input input_type_radio">
+                    <input class="input__input visually-hidden" id="impression-3" name="impression" type="radio" value="difficult">
+                    <label class="input__button button button_theme_radio" for="impression-3">
+                      <span class="button__tick"></span>
+                    </label>
+                  </span>
+                <label class="field__item input__label label label_strong" for="impression-3">Затрудняюсь ответить</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__item container width">
+          <fieldset class="fieldset fieldset_attractions fieldset_border">
+            <legend class="fieldset__heading heading heading_fieldset">Посещенные достопримечательности</legend>
+            <div class="fieldset__inner">
+              <div class="fieldset__item">
+                <div class="field field_row">
+                  <span class="field__item fieldset__item input input_type_checkbox">
+                    <input class="input__input visually-hidden" id="devils-bridge" name="attractions" type="checkbox" value="devils-bridge">
+                    <label class="input__button button button_theme_checkbox" for="devils-bridge">
+                      <svg class="button__tick icon icon_fill_mine-shaft" width="18" height="14">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                    </label>
+                  </span>
+                  <label class="field__item input__label label label_strong" for="devils-bridge">Мост Дьявола</label>
+                </div>
+              </div>
+              <div class="fieldset__item">
+                <div class="field field_row">
+                  <span class="field__item input input_type_checkbox">
+                    <input class="input__input visually-hidden" id="bell-rock" name="attractions" type="checkbox" value="bell-rock">
+                    <label class="input__button button button_theme_checkbox" for="bell-rock">
+                      <svg class="button__tick icon icon_fill_mine-shaft" width="18" height="14">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                    </label>
+                  </span>
+                  <label class="field__item input__label label label_strong" for="bell-rock">Гора-Колокол</label>
+                </div>
+              </div>
+              <div class="fieldset__item">
+                <div class="field field_row">
+                  <span class="field__item input input_type_checkbox">
+                    <input class="input__input visually-hidden" id="slide-park" name="attractions" type="checkbox" value="slide-park">
+                    <label class="input__button button button_theme_checkbox" for="slide-park">
+                      <svg class="button__tick icon icon_fill_mine-shaft" width="18" height="14">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                    </label>
+                  </span>
+                  <label class="field__item input__label label label_strong" for="slide-park">Слайд-парк</label>
+                </div>
+              </div>
+              <div class="fieldset__item">
+                <div class="field field_row">
+                  <span class="field__item input input_type_checkbox">
+                    <input class="input__input visually-hidden" id="red-rock" name="attractions" type="checkbox" value="red-rock">
+                    <label class="input__button button button_theme_checkbox" for="red-rock">
+                      <svg class="button__tick icon icon_fill_mine-shaft" width="18" height="14">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                    </label>
+                  </span>
+                  <label class="field__item input__label label label_strong" for="red-rock">Красные скалы</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__item container width">
+          <fieldset class="fieldset fieldset_border">
+            <legend class="fieldset__heading heading heading_fieldset">Опишите свои эмоции</legend>
+            <div class="fieldset__item">
+              <div class="field">
+                <textarea class="input_type_textarea" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__item form__item_footer container width">
+          <button class="button button_review">
+            <span class="button__text">Отправить отзыв</span>
+          </button>
+          <p class="form__annotation text text_annotation">* — обязательные поля</p>
+        </div>
+      </form>
+    </main>
+    <footer class="page__footer page-footer">
+      <b class="page-footer__hashtag text text_footer-hashtag">visitsedona</b>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__list-item">
+            <a class="button button_theme_square" href="#" aria-label="Twitter">
+              <svg class="button__icon icon icon_fill_current" width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__list-item">
+            <a class="button button_theme_square" href="#" aria-label="Facebook">
+              <svg class="button__icon icon icon_fill_current" width="9" height="18">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__list-item">
+            <a class="button button_theme_square" href="#" aria-label="YouTube">
+              <svg class="button__icon icon icon_fill_current" width="20" height="14">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__created-by created-by">
+        <span class="created-by__label">Разработано</span>
+        <a class="created-by__logo logo-link logo-link_html-academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="logo-link__image icon icon_fill_current" width="27" height="34">
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

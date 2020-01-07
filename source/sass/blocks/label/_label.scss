@@ -1,12 +1,19 @@
 .label {
   font-weight: normal;
 
+  display: inline-flex;
+
   user-select: none;
+  vertical-align: top;
   text-transform: uppercase;
 
   &::after {
     content: ":";
   }
+}
+
+.input__input:not(:disabled) ~ .label {
+  cursor: pointer;
 }
 
 // Boolean

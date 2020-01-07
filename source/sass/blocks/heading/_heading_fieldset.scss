@@ -1,0 +1,36 @@
+@import "../../base/variables";
+
+.heading_fieldset {
+  font-size: 18px;
+  line-height: 1.45;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    content: ":";
+  }
+
+  @media #{$from-tablet} {
+    font-size: 21px;
+  }
+}
+
+.fieldset_border .heading_fieldset {
+  @media #{$from-tablet} {
+    box-sizing: content-box;
+    max-width: 278px;
+    padding-right: 58px;
+    padding-left: 58px;
+  }
+}
+
+.form__item.width_1\/2 .heading_fieldset.heading_no-wrap {
+  @media #{$from-tablet} {
+    text-align: left;
+  }
+
+  @media #{$from-tablet} and #{$to-desktop} {
+    white-space: nowrap;
+  }
+}

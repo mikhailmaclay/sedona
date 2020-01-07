@@ -1,0 +1,7 @@
+@import "../../../base/variables";
+
+.form__item_impression {
+  @media #{$from-tablet} {
+    order: -1;
+  }
+}

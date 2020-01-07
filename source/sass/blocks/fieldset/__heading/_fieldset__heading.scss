@@ -1,0 +1,11 @@
+@import "../../../base/variables";
+
+.fieldset__heading {
+  align-self: center;
+
+  margin-bottom: 25px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 60px;
+  }
+}

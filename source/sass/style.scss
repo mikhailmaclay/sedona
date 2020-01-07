@@ -4,6 +4,7 @@
 // Помощники
 @import "base/line-breaker";
 @import "base/visually-hidden";
+@import "base/width";
 
 // Текстовые блоки
 @import "blocks/heading/heading";
@@ -17,24 +18,28 @@
 @import "blocks/icon/icon";
 @import "blocks/advantage/advantage";
 @import "blocks/feature/feature";
+@import "blocks/container/container";
 
 // Собирательные блоки
 @import "blocks/created-by/created-by";
 @import "blocks/fieldset/fieldset";
+@import "blocks/field/field";
 @import "blocks/input/input";
 @import "blocks/logo-link/logo-link";
 @import "blocks/navigation/navigation";
 @import "blocks/social/social";
+@import "blocks/form/form";
 
 // Контекстные семантические блоки
 @import "blocks/intro/intro";
 @import "blocks/cta/cta";
+@import "blocks/features/features";
 @import "blocks/hello/hello";
 @import "blocks/map/map";
+@import "blocks/reasons/reasons";
 
 // Структурные блоки
 @import "blocks/page/page";
 @import "blocks/page-header/page-header";
 @import "blocks/page-main/page-main";
 @import "blocks/page-footer/page-footer";
-@import "blocks/grid/grid";

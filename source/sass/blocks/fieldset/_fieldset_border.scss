@@ -1,0 +1,9 @@
+@import "../../base/variables";
+
+.fieldset_border {
+  @media #{$from-tablet} {
+    $border-color: $mercury;
+
+    border-top: 1px solid $border-color;
+  }
+}

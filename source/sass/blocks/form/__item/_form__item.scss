@@ -1,0 +1,46 @@
+@import "../../../base/variables";
+
+.form__item {
+  &:not(:last-child) {
+    @media #{$to-tablet} {
+      $background-color: $alto;
+
+      border-top: 1px solid $background-color;
+    }
+
+    @media #{$from-tablet} {
+      margin-bottom: 58px;
+    }
+  }
+
+  @media #{$to-tablet} {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.form__item.form__item_separator.width_1\/2 {
+  @media #{$from-tablet} {
+    position: relative;
+
+    &::after {
+      $border-color: $alto;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 0;
+      height: 100%;
+
+      content: "";
+
+      border-right: 1px solid $border-color;
+    }
+  }
+}
+
+// Boolean
+@import "form__item_footer";
+@import "form__item_impression";
+@import "form__item_introduce";
