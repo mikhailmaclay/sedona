@@ -3,11 +3,6 @@
 .field {
   display: flex;
   flex-direction: column;
-
-  &_row {
-    align-items: center;
-    flex-direction: row;
-  }
 }
 
 .fieldset_attractions .field {
@@ -15,6 +10,11 @@
     width: 200px;
   }
 }
+
+// Boolean
+@import "field_review-mail";
+@import "field_review-phone";
+@import "field_row";
 
 // Элементы
 @import "__item/field__item";

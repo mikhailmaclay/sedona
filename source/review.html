@@ -75,24 +75,26 @@
           </fieldset>
         </div>
         <div class="form__item container width">
-          <fieldset class="fieldset fieldset_border">
+          <fieldset class="fieldset fieldset_contact fieldset_border">
             <legend class="fieldset__heading heading heading_fieldset">Контактная информация</legend>
-            <div class="fieldset__item">
-              <div class="field">
-                <label class="field__item label label_required" for="phone">Контактный телефон</label>
-                <span class="field__item input input_type_text input_iconed">
+            <div class="fieldset__inner">
+              <div class="fieldset__item">
+                <div class="field field_review-phone">
+                  <label class="field__item label label_required" for="phone"><span class="hidden hidden_from-desktop">Контактный</span> телефон</label>
+                  <span class="field__item input input_type_text input_review-phone input_iconed">
                   <input class="input__input" id="phone" name="phone" type="text" placeholder="Введите телефон">
                   <span class="input__icon input__icon_phone"></span>
                 </span>
+                </div>
               </div>
-            </div>
-            <div class="fieldset__item">
-              <div class="field">
-                <label class="field__item label label_required" for="email">Электронная почта</label>
-                <span class="field__item input input_type_text input_iconed">
+              <div class="fieldset__item">
+                <div class="field field_review-mail">
+                  <label class="field__item label label_required" for="email">Электронная почта</label>
+                  <span class="field__item input input_type_text input_iconed input_review-mail">
                   <input class="input__input" id="email" name="email" type="email" placeholder="Введите e-mail">
                   <span class="input__icon input__icon_mail"></span>
                 </span>
+                </div>
               </div>
             </div>
           </fieldset>

@@ -1,3 +1,5 @@
+@import "../../../base/variables";
+
 .field__item {
   &.label:first-child {
     align-self: flex-start;
@@ -17,6 +19,23 @@
     &.input_type_radio,
     &.input_type_checkbox {
       margin-right: 14px;
+    }
+  }
+}
+
+.field_review-phone,
+.field_review-mail {
+  .field__item {
+    &.label:first-child {
+      @media #{$from-desktop} {
+        align-self: center;
+      }
+    }
+
+    &:not(:only-child):first-child {
+      @media #{$from-desktop} {
+        margin: 0 16px 0 0;
+      }
     }
   }
 }
