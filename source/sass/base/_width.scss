@@ -1,0 +1,17 @@
+@import "variables";
+
+.width {
+  width: 100%;
+
+  &_1\/2 {
+    @media #{$from-tablet} {
+      width: calc(100% / 2);
+    }
+  }
+
+  &_1\/3 {
+    @media #{$from-tablet} {
+      width: calc(100% / 3);
+    }
+  }
+}

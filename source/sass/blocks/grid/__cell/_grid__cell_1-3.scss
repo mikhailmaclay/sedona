@@ -1,7 +1,0 @@
-@import "../../../base/variables";
-
-.grid__cell_1\/3 {
-  @media #{$from-tablet} {
-    width: calc(100% / 3);
-  }
-}
