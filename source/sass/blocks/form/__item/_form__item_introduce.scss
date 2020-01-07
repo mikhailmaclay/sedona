@@ -1,0 +1,15 @@
+@import "../../../base/variables";
+
+.form__item_introduce {
+  &:not(:only-child):not(:last-child) {
+    @media #{$from-tablet} {
+      margin-bottom: 75px;
+    }
+  }
+}
+
+.form__item_introduce.width_1\/2 {
+  @media #{$from-tablet} {
+    padding-left: 60px;
+  }
+}

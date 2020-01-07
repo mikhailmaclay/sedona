@@ -1,0 +1,23 @@
+@import "../../../base/variables";
+
+.fieldset_attractions .fieldset__inner {
+  @media #{$from-tablet} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: -20px;
+  }
+
+  @media #{$from-tablet} and #{$to-desktop} {
+    width: 68%;
+    margin-right: auto;
+    margin-left: auto;
+
+    transform: translateX(10px);
+  }
+
+  @media #{$from-desktop} {
+    justify-content: space-between;
+  }
+}
