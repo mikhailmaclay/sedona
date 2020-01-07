@@ -1,0 +1,9 @@
+@import "variables";
+
+.hidden {
+  &_from-desktop {
+    @media #{$from-desktop} {
+      display: none;
+    }
+  }
+}

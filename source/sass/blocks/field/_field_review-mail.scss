@@ -1,0 +1,7 @@
+@import "../../base/variables";
+
+.field_review-mail {
+  @media #{$from-desktop} {
+    flex-direction: row;
+  }
+}
