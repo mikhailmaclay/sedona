@@ -18,7 +18,7 @@
 
     &.input_type_radio,
     &.input_type_checkbox {
-      margin-right: 14px;
+      margin-right: 20px;
     }
   }
 }
@@ -27,6 +27,12 @@
 .field_review-mail {
   .field__item {
     &.label:first-child {
+      margin-bottom: 8px;
+
+      @media #{$from-tablet} {
+        margin-bottom: 9px;
+      }
+
       @media #{$from-desktop} {
         align-self: center;
       }
