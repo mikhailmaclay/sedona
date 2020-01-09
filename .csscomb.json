@@ -7,7 +7,7 @@
   "always-semicolon": true,
   "block-indent": "  ",
   "color-case": "lower",
-  "color-shorthand": true,
+  "color-shorthand": false,
   "element-case": "lower",
   "eof-newline": true,
   "leading-zero": true,
@@ -28,6 +28,7 @@
   "sort-order": [
     ["$variable"],
     ["$include"],
+    ["all"],
     [
       "font",
       "font-family",
