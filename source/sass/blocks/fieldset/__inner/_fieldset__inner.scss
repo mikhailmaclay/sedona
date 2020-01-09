@@ -6,15 +6,17 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    margin-bottom: -20px;
+    margin-bottom: -22px;
+
+    @media #{$from-tablet} {
+      margin-bottom: -30px;
+    }
   }
 
   @media #{$from-tablet} and #{$to-desktop} {
-    width: 68%;
+    width: 71%;
     margin-right: auto;
     margin-left: auto;
-
-    transform: translateX(10px);
   }
 
   @media #{$from-desktop} {

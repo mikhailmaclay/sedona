@@ -1,3 +1,13 @@
+@import "../../../base/variables";
+
 .hello__heading {
   margin: 0 0 30px;
+}
+
+.hello_small .hello__heading {
+  margin-bottom: 28px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 25px;
+  }
 }

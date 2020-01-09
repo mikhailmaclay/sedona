@@ -1,0 +1,13 @@
+@import "../../../base/variables";
+
+.form__item_contact {
+  &:not(:last-child) {
+    @media #{$from-tablet} {
+      margin-bottom: 51px;
+    }
+
+    @media #{$from-desktop} {
+      margin-bottom: 24px;
+    }
+  }
+}

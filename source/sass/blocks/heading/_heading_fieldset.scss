@@ -13,6 +13,7 @@
 
   @media #{$from-tablet} {
     font-size: 21px;
+    line-height: 1.3;
   }
 }
 
@@ -25,12 +26,15 @@
   }
 }
 
-.form__item.width_1\/2 .heading_fieldset.heading_no-wrap {
+
+.form__item.width_1\/2 .heading_fieldset {
   @media #{$from-tablet} {
     text-align: left;
   }
 
-  @media #{$from-tablet} and #{$to-desktop} {
-    white-space: nowrap;
+  &.heading_no-wrap {
+    @media #{$from-tablet} and #{$to-desktop} {
+      white-space: nowrap;
+    }
   }
 }

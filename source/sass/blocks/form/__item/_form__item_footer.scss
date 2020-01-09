@@ -1,6 +1,16 @@
+@import "../../../base/variables";
+
 .form__item_footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  margin-top: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media #{$from-tablet} {
+    margin-top: 2px;
+  }
 }

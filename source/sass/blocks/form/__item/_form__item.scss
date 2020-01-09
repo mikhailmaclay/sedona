@@ -14,8 +14,14 @@
   }
 
   @media #{$to-tablet} {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 18px;
+    padding-bottom: 26px;
+  }
+}
+
+.form__item.width_1\/2 {
+  @media #{$from-tablet} {
+    padding-top: 56px;
   }
 }
 
@@ -41,6 +47,8 @@
 }
 
 // Boolean
+@import "_form__item_attractions";
+@import "form__item_contact";
 @import "form__item_footer";
 @import "form__item_impression";
 @import "form__item_introduce";
