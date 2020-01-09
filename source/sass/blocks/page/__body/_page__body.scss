@@ -1,24 +1,7 @@
 @import "../../../base/variables";
 
 .page__body {
-  $width: $mobile-width;
-
-  display: flex;
-  flex-direction: column;
-
-  width: $width;
-  margin: 0 auto;
-
-
-  @media #{$from-tablet} {
-    $width: $tablet-width;
-
-    width: $width;
-  }
-
   @media #{$from-desktop} {
-    $width: $desktop-width;
-
-    width: $width;
+    padding: 0 40px;
   }
 }

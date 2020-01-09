@@ -1,14 +1,11 @@
 @import "../../base/variables";
 
 .page {
-  $min-width: $mobile-width;
   $background-color: $concrete;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.5;
-
-  min-width: $min-width;
 
   counter-reset: advantages;
 
