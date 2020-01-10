@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page page_review" lang="en">
+<html class="page page_media-gallery" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,35 +21,33 @@
       </ul>
       <button class="navigation__close button button_theme_x-ray" type="button" aria-label="Закрыть">
         <svg class="button_icon icon icon_fill_white" width="23" height="22">
-          <use xlink:href="img/sprite.svg#icon-cross"></use>
+          <use xlink:href="img/icon-sprite.svg#icon-cross"></use>
         </svg>
       </button>
     </nav>
     <a class="page-header__logo logo-link logo-link_main" aria-label="Седона" href="index.html" tabindex="-1">
       <picture>
-        <source srcset="img/sprite.svg#logo-sedona-desktop" media="(min-width: 1280px)">
-        <source srcset="img/sprite.svg#logo-sedona-tablet" media="(min-width: 768px)">
-        <source srcset="img/sprite.svg#logo-sedona-mobile">
-        <img class="logo-link__image" src="img/sprite.svg#logo-sedona-mobile" alt="Седона" width="102" height="83">
+        <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1280px)">
+        <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
+        <source srcset="img/logo-sedona-mobile.svg">
+        <img class="logo-link__image" src="img/logo-sedona-desktop.svg" alt="Седона" width="102" height="83">
       </picture>
     </a>
     <button class="page-header__menu button button_theme_x-ray button_menu button_no-js" type="button">
       <svg class="button_icon icon icon_fill_half-baked" width="23" height="21">
-        <use xlink:href="img/sprite.svg#icon-menu"></use>
+        <use xlink:href="img/icon-sprite.svg#icon-menu"></use>
       </svg>
     </button>
   </header>
   <div class="intro intro_small collar collar_bottom">
-    <svg class="intro__tagline" width="230" height="40">
-      <use xlink:href="img/sprite.svg#text-sedona"></use>
-    </svg>
+    <img class="intro__tagline" src="img/text-sedona.svg" alt="Седона" width="230" height="40">
   </div>
   <main class="page__main page-main">
-    <div class="section">
+    <div class="section section_internal-first section_media-gallery">
       <b class="section__heading heading heading_section">Фото и видео</b>
-      <p class="section__text text text_section">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+      <p class="section__text text text_section">Не можете решиться на путешествие из-за курса? <span class="line-breaker line-breaker_tablet line-breaker_desktop"></span>Фотографии помогут вам забыть о политике и экономике</p>
     </div>
-    <div class="gallery-images container">
+    <div class="page__gallery gallery-images container">
       <div class="gallery-image gallery-image_special">
         <a href="#">
           <picture class="gallery-image__picture">
@@ -59,7 +57,7 @@
             <source srcset="img/photo-sunset-desktop@1x.jpg" media="(min-width: 1280px)">
             <source srcset="img/photo-sunset-tablet@1x.jpg" media="(min-width: 768px)">
             <source srcset="img/photo-sunset-mobile@1x.jpg">
-            <img class="gallery-image__image" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
+            <img class="gallery-image__image" src="img/photo-sunset-desktop@1x.jpg" alt="Неродные просторы">
           </picture>
         </a>
         <div class="gallery-image__meta">
@@ -69,7 +67,7 @@
           </div>
           <button class="gallery-image__button button button_theme_x-ray button_like" type="button">
             <svg class="button__icon icon icon_fill_current" width="23" height="21">
-              <use xlink:href="img/sprite.svg#icon-like"></use>
+              <use xlink:href="img/icon-sprite.svg#icon-like"></use>
             </svg>
             <span class="button__text">1350</span>
           </button>
@@ -84,7 +82,7 @@
             <source srcset="img/photo-cactus-desktop@1x.jpg" media="(min-width: 1280px)">
             <source srcset="img/photo-cactus-tablet@1x.jpg" media="(min-width: 768px)">
             <source srcset="img/photo-cactus-mobile@1x.jpg">
-            <img class="gallery-image__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+            <img class="gallery-image__image" src="img/photo-cactus-desktop@1x.jpg" alt="Местная растительность">
           </picture>
         </a>
         <div class="gallery-image__meta">
@@ -94,7 +92,7 @@
           </div>
           <button class="gallery-image__button button button_theme_x-ray button_like" type="button">
             <svg class="button__icon icon icon_fill_current" width="23" height="21">
-              <use xlink:href="img/sprite.svg#icon-like"></use>
+              <use xlink:href="img/icon-sprite.svg#icon-like"></use>
             </svg>
             <span class="button__text">143</span>
           </button>
@@ -109,7 +107,7 @@
             <source srcset="img/photo-roads-desktop@1x.jpg" media="(min-width: 1280px)">
             <source srcset="img/photo-roads-tablet@1x.jpg" media="(min-width: 768px)">
             <source srcset="img/photo-roads-mobile@1x.jpg">
-            <img class="gallery-image__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+            <img class="gallery-image__image" src="img/photo-roads-desktop@1x.jpg" alt="Дорога на север">
           </picture>
         </a>
         <div class="gallery-image__meta">
@@ -119,7 +117,7 @@
           </div>
           <button class="gallery-image__button button button_theme_x-ray button_like" type="button">
             <svg class="button__icon icon icon_fill_current" width="23" height="21">
-              <use xlink:href="img/sprite.svg#icon-like"></use>
+              <use xlink:href="img/icon-sprite.svg#icon-like"></use>
             </svg>
             <span class="button__text">96</span>
           </button>
@@ -134,7 +132,7 @@
             <source srcset="img/photo-bridge-desktop@1x.jpg" media="(min-width: 1280px)">
             <source srcset="img/photo-bridge-tablet@1x.jpg" media="(min-width: 768px)">
             <source srcset="img/photo-bridge-mobile@1x.jpg">
-            <img class="gallery-image__image" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+            <img class="gallery-image__image" src="img/photo-bridge-desktop@1x.jpg" alt="Мост дьявола">
           </picture>
         </a>
         <div class="gallery-image__meta">
@@ -144,17 +142,17 @@
           </div>
           <button class="gallery-image__button button button_theme_x-ray button_like" type="button">
             <svg class="button__icon icon icon_fill_current" width="23" height="21">
-              <use xlink:href="img/sprite.svg#icon-like"></use>
+              <use xlink:href="img/icon-sprite.svg#icon-like"></use>
             </svg>
             <span class="button__text">254</span>
           </button>
         </div>
       </div>
     </div>
-    <section class="section">
-      <b class="section__heading heading heading_section">Все еще сомневаетесь?</b>
+    <section class="page__video section section_video">
+      <h2 class="section__heading heading heading_section">Все еще сомневаетесь?</h2>
       <p class="section__text text text_section">
-        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        Смотрите видеопрезентацию и скорее за билетами, пока <span class="line-breaker line-breaker_tablet line-breaker_desktop"></span>они не подорожали в очередной раз!
       </p>
     </section>
     <div class="player">
@@ -165,28 +163,28 @@
         <source srcset="img/video-desktop@1x.jpg" media="(min-width: 1280px)">
         <source srcset="img/video-tablet@1x.jpg" media="(min-width: 768px)">
         <source srcset="img/video-mobile@1x.jpg">
-        <img class="player__cover" src="img/video-mobile@1x.jpg" alt="Обложка видео">
+        <img class="player__cover" src="img/video-desktop@1x.jpg" alt="Обложка видео">
       </picture>
       <div class="player__controls">
         <button class="player__button button button_theme_x-ray button_player" title="Повторить">
           <svg class="button__icon icon icon_fill_current" width="16" height="20">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-video-replay"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#icon-video-replay"></use>
           </svg>
         </button>
         <span class="player__progress input input_type_range input_player">
-            <button class="input__button button button_theme_range" type="button" title="Прогресс">
+            <button class="input__button input__button_range button button_theme_range" type="button" title="Прогресс">
               <span class="button__icon"></span>
             </button>
             <span class="input__range"></span>
           </span>
         <button class="player__button button button_theme_x-ray button_player" title="Субтитры">
           <svg class="button__icon icon icon_fill_current" width="32" height="20">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#icon-video-subtitles"></use>
           </svg>
         </button>
         <button class="player__button button button_theme_x-ray button_player" title="Полный экран">
           <svg class="button__icon icon icon_fill_current" width="20" height="20">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#icon-video-fullscreen"></use>
           </svg>
         </button>
       </div>
@@ -199,21 +197,21 @@
         <li class="social__list-item">
           <a class="button button_theme_square" href="#" aria-label="Twitter">
             <svg class="button__icon icon icon_fill_current" width="18" height="14">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="img/icon-sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__list-item">
           <a class="button button_theme_square" href="#" aria-label="Facebook">
             <svg class="button__icon icon icon_fill_current" width="9" height="18">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="img/icon-sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__list-item">
           <a class="button button_theme_square" href="#" aria-label="YouTube">
             <svg class="button__icon icon icon_fill_current" width="20" height="14">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              <use xlink:href="img/icon-sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -223,12 +221,13 @@
       <span class="created-by__label">Разработано</span>
       <a class="created-by__logo logo-link logo-link_html-academy" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="logo-link__image icon icon_fill_current" width="27" height="34">
-          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          <use xlink:href="img/icon-sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
   </footer>
 </div>
 <script src="js/script.js"></script>
+<script src="js/svguse.js"></script>
 </body>
 </html>

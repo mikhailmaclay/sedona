@@ -6,21 +6,19 @@
 
     height: 26px;
 
-    background-image: url("../img/sprite.svg#bg-intro-triangle-mobile");
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 94px;
+    background-size: 100% calc(100% + 2px);
 
     @media #{$from-tablet} {
       height: 57px;
 
-      background-image: url("../img/sprite.svg#bg-intro-triangle-tablet");
-      background-size: 100% 225px;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
 
     @media #{$from-desktop} {
-      background-image: url("../img/sprite.svg#bg-intro-triangle-desktop");
-      background-size: 100% 351px;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
   }
 }

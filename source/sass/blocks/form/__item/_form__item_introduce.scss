@@ -1,6 +1,12 @@
 @import "../../../base/variables";
 
 .form__item_introduce {
+  @media #{$from-tablet} {
+    width: calc(100% / 2);
+    padding-top: 59px;
+    padding-left: 60px;
+  }
+
   &:not(:only-child):not(:last-child) {
     @media #{$from-tablet} {
       margin-bottom: 68px;
@@ -9,11 +15,5 @@
     @media #{$from-desktop} {
       margin-bottom: 66px;
     }
-  }
-}
-
-.form__item_introduce.width_1\/2 {
-  @media #{$from-tablet} {
-    padding-left: 60px;
   }
 }

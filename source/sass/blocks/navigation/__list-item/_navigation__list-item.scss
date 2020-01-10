@@ -34,3 +34,13 @@
     }
   }
 }
+
+.page_ie11 .navigation__list-item:nth-child(1) {
+  @media #{$from-tablet} {
+    margin-right: 73px;
+  }
+
+  @media #{$from-desktop} {
+    margin-right: 160px;
+  }
+}

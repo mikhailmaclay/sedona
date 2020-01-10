@@ -1,0 +1,11 @@
+@import "../../base/variables";
+
+.section_index-first {
+  padding-top: 40px;
+  padding-bottom: 28px;
+
+  @media #{$from-tablet} {
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+}

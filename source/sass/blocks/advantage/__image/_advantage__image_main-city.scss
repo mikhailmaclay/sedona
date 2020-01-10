@@ -2,10 +2,6 @@
 
 .advantage__image_main-city {
   @media #{$from-desktop} {
-    transform: translateY(-55px);
-  }
-
-  @media #{$from-desktop} {
     transform: translateY(-70px);
   }
 }

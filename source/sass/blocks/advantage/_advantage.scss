@@ -11,7 +11,8 @@
   flex-direction: column;
 
   box-sizing: border-box;
-  padding: nth($padding, 1) nth($padding, 2) 29px;
+  width: 100%;
+  padding: nth($padding, 1) nth($padding, 2) 28px;
 
   counter-increment: advantages;
   text-align: center;
@@ -35,6 +36,7 @@
   }
 
   @media #{$from-tablet} {
+    width: calc(100% / 3);
     min-height: 256px;
     padding-top: 42px;
   }

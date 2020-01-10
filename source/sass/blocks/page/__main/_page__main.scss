@@ -8,6 +8,18 @@
   }
 
   @media #{$from-desktop} {
-    margin-bottom: 61px;
+    margin-bottom: 65px;
+  }
+}
+
+.page_media-gallery .page__main {
+  margin-bottom: 38px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 40px;
+  }
+
+  @media #{$from-desktop} {
+    margin-bottom: 85px;
   }
 }

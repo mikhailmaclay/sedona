@@ -7,8 +7,6 @@
 }
 
 .logo-link_main .logo-link__image {
-  $clip-path: polygon(92px 0, 193px 0%, 193px 100%, 92px 100%);
-
   position: absolute;
   left: 50%;
 
@@ -17,14 +15,4 @@
 
   transform: translateX(-50%);
   pointer-events: none;
-
-  @supports (clip-path: $clip-path) {
-    pointer-events: auto;
-
-    clip-path: $clip-path;
-
-    @media #{$from-desktop} {
-      clip-path: polygon(71px 0, 258px 0%, 258px 100%, 71px 100%);
-    }
-  }
 }

@@ -4,10 +4,14 @@
   margin: 0 0 30px;
 }
 
-.section_small .section_heading {
+.section_internal-first .section__heading {
   margin-bottom: 28px;
 
   @media #{$from-tablet} {
     margin-bottom: 25px;
   }
+}
+
+.section_video .section__heading {
+  margin-bottom: 27px;
 }

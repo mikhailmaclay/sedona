@@ -5,3 +5,10 @@
     padding: 0 40px;
   }
 }
+
+.page_ie11,
+.page_edge {
+  .page__body {
+    overflow-x: hidden;
+  }
+}

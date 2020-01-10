@@ -7,6 +7,10 @@
 
   color: black;
 
+  @media #{$from-tablet} {
+    margin-bottom: 2px;
+  }
+
   @media #{$from-desktop} {
     color: white;
   }

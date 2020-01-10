@@ -6,7 +6,7 @@
   flex-direction: column;
 
   box-sizing: border-box;
-  padding: 40px 30px 27px;
+  padding: 22px;
 
   @media #{$from-tablet} {
     padding-top: 48px;
@@ -15,7 +15,10 @@
 }
 
 // Boolean
-@import "section_small";
+@import "section_index-first";
+@import "section_internal-first";
+@import "section_media-gallery";
+@import "section_video";
 
 // Элементы
 @import "__text/section__text";

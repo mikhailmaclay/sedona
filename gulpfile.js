@@ -10,11 +10,11 @@ var server = require("browser-sync").create();
 var svgsprite = require('gulp-svg-sprite');
 
 gulp.task("svgsprite", function () {
-  return gulp.src("source/img/svg/*.svg")
+  return gulp.src("source/img/icons/*.svg")
     .pipe(svgsprite({
         mode: {
           stack: {
-            sprite: "../sprite.svg"
+            sprite: "../icon-sprite.svg"
           }
         },
       }

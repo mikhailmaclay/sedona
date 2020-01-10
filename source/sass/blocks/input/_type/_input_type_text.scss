@@ -1,6 +1,6 @@
 @import "../../../base/variables";
 
-.input_type_text {
+.input_type_text:not(.input_iconed) {
   $color: (default: inherit, invalid: red);
   $background-color: (default: $concrete, hover: $mercury, active: transparent, invalid: rgba(red, 0.1));
 
@@ -41,6 +41,13 @@
   }
 
   &::placeholder {
+    opacity: 1;
     color: inherit;
   }
+}
+
+.page_firefox .input_type_text:not(.input_iconed) {
+  flex-grow: 1;
+
+  width: 0;
 }

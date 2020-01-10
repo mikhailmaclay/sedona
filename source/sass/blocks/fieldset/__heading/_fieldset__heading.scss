@@ -3,7 +3,9 @@
 .fieldset__heading {
   align-self: center;
 
+  margin-right: auto;
   margin-bottom: 20px;
+  margin-left: auto;
 
   @media #{$from-tablet} {
     margin-bottom: 60px;

@@ -27,14 +27,23 @@
 }
 
 
-.form__item.width_1\/2 .heading_fieldset {
-  @media #{$from-tablet} {
-    text-align: left;
-  }
-
-  &.heading_no-wrap {
-    @media #{$from-tablet} and #{$to-desktop} {
-      white-space: nowrap;
+.form__item_introduce,
+.form__item_impression {
+  .heading_fieldset {
+    @media #{$from-tablet} {
+      text-align: left;
     }
+
+    &.heading_no-wrap {
+      @media #{$from-tablet} and #{$to-desktop} {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.page_ie11 .fieldset_border .heading_fieldset {
+  @media #{$from-tablet} {
+    max-width: 287px;
   }
 }
