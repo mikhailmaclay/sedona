@@ -20,3 +20,15 @@ a.button:not([href]) {
     }
   }
 }
+
+.button_like .button__icon {
+  $color: $silver-chalice;
+
+  margin-right: 14px;
+
+  color: $color;
+
+  @media #{$from-desktop} {
+    color: white;
+  }
+}

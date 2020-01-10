@@ -29,3 +29,11 @@ a.button:not([href]) {
     }
   }
 }
+
+.button_like .button__text {
+  font-size: 14px;
+
+  @media #{$from-desktop} {
+    color: white;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../base/variables";
+
+.gallery-image__meta .gallery-image__inner {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-bottom: 11px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 0;
+  }
+}
