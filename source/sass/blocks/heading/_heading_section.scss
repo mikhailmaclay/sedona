@@ -1,6 +1,6 @@
 @import "../../base/variables";
 
-.heading_hello {
+.heading_section {
   font-size: 18px;
   line-height: 1.4;
 
@@ -17,7 +17,7 @@
   }
 }
 
-.hello_small .heading_hello {
+.section_small .heading_section {
   line-height: 1.3;
 
   @media #{$from-tablet} {

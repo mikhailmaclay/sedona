@@ -1,10 +1,10 @@
 @import "../../../base/variables";
 
-.hello__heading {
+.section__heading {
   margin: 0 0 30px;
 }
 
-.hello_small .hello__heading {
+.section_small .section_heading {
   margin-bottom: 28px;
 
   @media #{$from-tablet} {

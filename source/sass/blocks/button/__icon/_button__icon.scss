@@ -32,3 +32,12 @@ a.button:not([href]) {
     color: white;
   }
 }
+
+.button_theme_range .button__icon {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  border-radius: 50%;
+  background-color: white;
+}

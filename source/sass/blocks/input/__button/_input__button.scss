@@ -1,1 +1,12 @@
-//
+@import "../../../base/variables";
+
+.input_type_range .input__button {
+  $z-index: map-get($z-index-layers, content);
+
+  position: absolute;
+  z-index: $z-index;
+  top: 50%;
+  left: 25%;
+
+  transform: translate(calc(-6px), calc(-50% + 6px));
+}

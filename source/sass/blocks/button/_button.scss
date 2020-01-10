@@ -56,6 +56,7 @@ a.button:not([href]) {
 // Theme
 @import "_theme/button_theme_checkbox";
 @import "_theme/button_theme_radio";
+@import "_theme/button_theme_range";
 @import "_theme/button_theme_square";
 @import "_theme/button_theme_x-ray";
 
@@ -64,6 +65,7 @@ a.button:not([href]) {
 @import "button_like";
 @import "button_menu";
 @import "button_navigation";
+@import "button_player";
 @import "button_review";
 
 // Элементы

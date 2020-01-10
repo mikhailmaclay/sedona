@@ -1,0 +1,17 @@
+@import "../../../base/variables";
+
+.player__button {
+  &:not(:only-child):not(:last-child) {
+    margin-right: 30px;
+
+    &:first-child {
+      @media #{$to-tablet} {
+        margin-right: auto;
+      }
+
+      @media #{$from-tablet} {
+        margin-right: 42px;
+      }
+    }
+  }
+}

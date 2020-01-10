@@ -1,0 +1,13 @@
+.button_theme_range {
+  width: auto;
+  height: auto;
+  margin: -6px;
+  padding: 6px;
+
+  background-color: transparent;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+}

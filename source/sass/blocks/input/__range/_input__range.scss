@@ -1,0 +1,12 @@
+.input_type_range .input__range {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+
+  height: 3px;
+
+  transform: translateY(-50%);
+
+  background-color: rgba(white, 0.2);
+}
