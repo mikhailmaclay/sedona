@@ -1,0 +1,16 @@
+@import "../../../base/variables";
+
+.player__progress {
+  @media #{$to-tablet} {
+    position: absolute;
+    top: -(46px / 2);
+    right: 20px;
+    left: 20px;
+
+    transform: translateY(-50%);
+  }
+
+  @media #{$from-tablet} {
+    margin-right: 42px;
+  }
+}

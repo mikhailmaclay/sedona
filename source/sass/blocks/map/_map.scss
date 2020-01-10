@@ -7,7 +7,7 @@
   background-image: url("../img/sprite.svg#icon-map-marker"), url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100px 100px, contain;
+  background-size: 100px 100px, cover;
 
   @media #{$retina} {
     background-image: url("../img/sprite.svg#icon-map-marker"), url("../img/bg-map-mobile@2x.jpg");

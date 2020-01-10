@@ -1,10 +1,13 @@
 @import "../../base/variables";
 
 .intro {
+  $background-color: $sail;
+
   position: relative;
 
-  background-color: white;
+  background-color: $background-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
 
   @media #{$retina} {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -14,7 +17,6 @@
     min-height: 518px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: cover;
   }
 
   @media #{$from-tablet} and #{$retina} {

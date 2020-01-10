@@ -1,0 +1,37 @@
+@import "../../../base/variables";
+
+.player__controls {
+  $background-color: $concrete;
+
+  position: absolute;
+  right: 20px;
+  bottom: -66px;
+  left: 20px;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+  height: 66px;
+  padding: 5px 22px;
+
+  background-color: $background-color;
+
+  @media #{$to-tablet} {
+    box-sizing: content-box;
+
+    border-top: 45px solid rgba(black, 0.6);
+    background-clip: padding-box;
+  }
+
+  @media #{$from-tablet} {
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 93px;
+    padding: 10px 42px 10px 35px;
+
+    background-color: rgba(black, 0.6);
+  }
+}

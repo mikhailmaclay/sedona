@@ -1,6 +1,6 @@
 @import "../../base/variables";
 
-.hello {
+.section {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -15,8 +15,8 @@
 }
 
 // Boolean
-@import "hello_small";
+@import "section_small";
 
 // Элементы
-@import "__description/hello__description";
-@import "__heading/hello__heading";
+@import "__text/section__text";
+@import "__heading/section__heading";
