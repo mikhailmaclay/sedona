@@ -1,0 +1,36 @@
+@import "../../../base/variables";
+
+.gallery-image__meta {
+  @media #{$from-tablet} {
+    $background-color: $concrete;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    height: 80px;
+    padding: 20px 22px;
+
+    background-color: $background-color;
+  }
+
+  @media #{$from-desktop} {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(black, 0.3);
+  }
+}
+
+.gallery-image:nth-child(odd) .gallery-image__meta {
+  @media #{$from-tablet} and #{$to-desktop} {
+    $background-color: $terrace;
+
+    background-color: $background-color;
+  }
+}

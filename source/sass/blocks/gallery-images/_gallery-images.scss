@@ -1,0 +1,13 @@
+@import "../../base/variables";
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-images.container {
+  @media #{$from-desktop} {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

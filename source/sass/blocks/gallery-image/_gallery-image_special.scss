@@ -1,0 +1,11 @@
+@import "../../base/variables";
+
+.gallery-image_special {
+  @media #{$from-tablet} {
+    width: 100%;
+  }
+
+  @media #{$from-desktop} {
+    width: 100%;
+  }
+}

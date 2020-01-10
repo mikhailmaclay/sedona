@@ -1,0 +1,13 @@
+@import "../../../base/variables";
+
+.gallery-image__title {
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  color: black;
+
+  @media #{$from-desktop} {
+    color: white;
+  }
+}

@@ -22,7 +22,7 @@
   }
 
   @media #{$from-desktop} {
-    $max-width: $desktop-width;
+    $max-width: $desktop-width - 80px;
 
     max-width: $max-width;
   }
