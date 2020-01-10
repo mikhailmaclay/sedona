@@ -1,0 +1,13 @@
+@import "../../../base/variables";
+
+.page__video {
+  margin-bottom: 14px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 22px;
+  }
+
+  @media #{$from-desktop} {
+    margin-bottom: 21px;
+  }
+}

@@ -2,7 +2,7 @@
 
 .player__button {
   &:not(:only-child):not(:last-child) {
-    margin-right: 30px;
+    margin-right: 26px;
 
     &:first-child {
       @media #{$to-tablet} {

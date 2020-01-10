@@ -1,9 +1,16 @@
 .input_iconed .input__icon_mail {
   &::before {
-    width: 100%;
-    height: auto;
+    width: 16px;
+    height: 12px;
 
-    content: url("../img/sprite.svg#icon-mail");
-    transform: translate(-50%, calc(-50% + 4px));
+    content: url("../img/icon-sprite.svg#icon-mail");
+    transform: translate(-50%, -50%);
+  }
+}
+
+.page_ie11 .input__icon_mail {
+  &::before {
+    width: 25px;
+    height: 18px;
   }
 }

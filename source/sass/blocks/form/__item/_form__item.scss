@@ -1,6 +1,8 @@
 @import "../../../base/variables";
 
 .form__item {
+  width: 100%;
+
   &:not(:last-child) {
     @media #{$to-tablet} {
       $background-color: $alto;
@@ -14,18 +16,12 @@
   }
 
   @media #{$to-tablet} {
-    padding-top: 18px;
+    padding-top: 19px;
     padding-bottom: 26px;
   }
 }
 
-.form__item.width_1\/2 {
-  @media #{$from-tablet} {
-    padding-top: 56px;
-  }
-}
-
-.form__item.form__item_separator.width_1\/2 {
+.form__item.form__item_separator {
   @media #{$from-tablet} {
     position: relative;
 
@@ -33,8 +29,8 @@
       $border-color: $alto;
 
       position: absolute;
-      top: 0;
       right: 0;
+      bottom: 0;
 
       width: 0;
       height: 100%;
@@ -42,6 +38,10 @@
       content: "";
 
       border-right: 1px solid $border-color;
+
+      @media #{$from-tablet} {
+        height: calc(100% - 59px);
+      }
     }
   }
 }

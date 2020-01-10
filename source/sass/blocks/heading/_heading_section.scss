@@ -17,10 +17,13 @@
   }
 }
 
-.section_small .heading_section {
-  line-height: 1.3;
+.section_internal-first,
+.section_video {
+  .heading_section {
+    line-height: 1.3;
 
-  @media #{$from-tablet} {
-    font-size: 30px;
+    @media #{$from-tablet} {
+      font-size: 30px;
+    }
   }
 }

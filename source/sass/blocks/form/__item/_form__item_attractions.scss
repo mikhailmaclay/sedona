@@ -3,7 +3,7 @@
 .form__item_attractions {
   &:not(:last-child) {
     @media #{$from-tablet} {
-      margin-bottom: 67px;
+      margin-bottom: 64px;
     }
   }
 }
