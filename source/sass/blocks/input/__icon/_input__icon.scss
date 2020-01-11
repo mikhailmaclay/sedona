@@ -25,7 +25,7 @@
   }
 }
 
-.input_iconed .input__input:invalid + .input__icon {
+.input_iconed .input__input:invalid:not(:placeholder-shown) + .input__icon {
   background-color: rgba(red, 0.1);
 }
 

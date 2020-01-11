@@ -20,7 +20,7 @@
           <li class="navigation__list-item"><a class="button button_navigation" href="http://htmlacademy.ru">HTML Academy</a></li>
         </ul>
         <button class="navigation__close button button_theme_x-ray" type="button" aria-label="Закрыть">
-          <svg class="button_icon icon icon_fill_white" width="23" height="22">
+          <svg class="button__icon icon icon_fill_white" width="23" height="22">
             <use xlink:href="img/icon-sprite.svg#icon-cross"></use>
           </svg>
         </button>
@@ -34,7 +34,7 @@
         </picture>
       </a>
       <button class="page-header__menu button button_theme_x-ray button_menu button_no-js" type="button">
-        <svg class="button_icon icon icon_fill_half-baked" width="23" height="21">
+        <svg class="button__icon icon icon_fill_half-baked" width="23" height="21">
           <use xlink:href="img/icon-sprite.svg#icon-menu"></use>
         </svg>
       </button>
@@ -55,13 +55,13 @@
             <div class="fieldset__item">
               <div class="field field_row">
                 <label class="field__item label label_required" for="name">Имя</label>
-                <input class="field__item input input_type_text" id="name" name="name" type="text" placeholder="Петр">
+                <input class="field__item input input_type_text" id="name" name="name" type="text" placeholder="Петр" required>
               </div>
             </div>
             <div class="fieldset__item">
               <div class="field field_row">
                 <label class="field__item label label_required" for="surname">Фамилия</label>
-                <input class="field__item input input_type_text" id="surname" name="surname" type="text" placeholder="Иванов">
+                <input class="field__item input input_type_text" id="surname" name="surname" type="text" placeholder="Иванов" required>
               </div>
             </div>
             <div class="fieldset__item">
@@ -80,7 +80,7 @@
                 <div class="field field_review-phone">
                   <label class="field__item label label_required" for="phone"><span class="hidden hidden_from-desktop">Контактный </span>телефон</label>
                   <span class="field__item input input_type_text input_review-phone input_iconed">
-                  <input class="input__input" id="phone" name="phone" type="text" placeholder="Введите телефон">
+                  <input class="input__input" id="phone" name="phone" type="text" placeholder="Введите телефон" required>
                   <span class="input__icon input__icon_phone"></span>
                 </span>
                 </div>
@@ -89,7 +89,7 @@
                 <div class="field field_review-mail">
                   <label class="field__item label label_required" for="email">Электронная почта</label>
                   <span class="field__item input input_type_text input_iconed input_review-mail">
-                  <input class="input__input" id="email" name="email" type="email" placeholder="Введите e-mail">
+                  <input class="input__input" id="email" name="email" type="email" placeholder="Введите e-mail" required>
                   <span class="input__icon input__icon_mail"></span>
                 </span>
                 </div>
@@ -250,7 +250,28 @@
       </div>
     </footer>
   </div>
-  <script src="js/script.js"></script>
-  <script src="js/svguse.js"></script>
+  <div class="overlay">
+    <div class="overlay__modal modal modal_success">
+      <div class="modal__main">
+        <b class="modal__heading heading heading_modal">Ваш отзыв отправлен!</b>
+        <p class="modal__text text text_modal">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <span class="line-breaker line-breaker_tablet"></span>В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <footer class="modal__footer">
+        <button class="modal__button button button_modal" type="button">
+          <span class="button__text">Закрыть окно</span>
+        </button>
+      </footer>
+    </div>
+    <div class="overlay__modal modal modal_error">
+      <div class="modal__main">
+        <b class="modal__heading heading heading_modal">Что-то пошло <span class="line-breaker line-breaker_tablet"></span>не так!</b>
+        <p class="modal__text text text_modal">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button button button_modal button_error" type="button">
+          <span class="button__text">Ок</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js" type="module"></script>
 </body>
 </html>

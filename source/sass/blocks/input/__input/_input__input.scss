@@ -30,12 +30,12 @@
     outline: none;
     background-color: map-get($background-color, active);
 
-    &:invalid {
+    &:invalid:not(:placeholder-shown) {
       border-color: red;
     }
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     color: map-get($color, invalid);
     background-color: map-get($background-color, invalid);
   }

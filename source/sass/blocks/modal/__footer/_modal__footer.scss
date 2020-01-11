@@ -1,0 +1,15 @@
+@import "../../../base/variables";
+
+.modal__footer {
+  $background-color: $concrete;
+
+  padding: 20px;
+
+  background-color: $background-color;
+
+  @media #{$from-tablet} {
+    box-sizing: border-box;
+    min-height: 146px;
+    padding: 40px;
+  }
+}
