@@ -1,0 +1,12 @@
+@import "../../base/variables";
+
+.button_modal {
+  width: 100%;
+
+  @media #{$from-tablet} {
+    display: flex;
+
+    width: 458px;
+    margin: 0 auto;
+  }
+}

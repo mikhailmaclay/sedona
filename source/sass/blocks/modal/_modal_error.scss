@@ -1,0 +1,7 @@
+@import "../../base/variables";
+
+.modal_error {
+  @media #{$from-tablet} {
+    width: 400px;
+  }
+}

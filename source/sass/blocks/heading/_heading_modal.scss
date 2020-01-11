@@ -1,0 +1,13 @@
+@import "../../base/variables";
+
+.heading_modal {
+  font-size: 18px;
+  line-height: 1.4;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media #{$from-tablet} {
+    font-size: 30px;
+  }
+}

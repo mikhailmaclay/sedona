@@ -1,5 +1,9 @@
 @import "../../../base/variables";
 
+.button__icon {
+  pointer-events: none;
+}
+
 .button:active .button__icon {
   $transition: $base-transition;
 

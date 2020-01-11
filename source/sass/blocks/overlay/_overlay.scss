@@ -1,0 +1,25 @@
+@import "../../base/variables";
+
+.overlay {
+  $z-index: map-get($z-index-layers, overlay);
+
+  position: fixed;
+  z-index: $z-index;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+  overflow-y: auto;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgba($fountain-blue, 0.2);
+}
+
+// Boolean
+@import "overlay_visible";
+
+// Элементы
+@import "__modal/overlay__modal";
