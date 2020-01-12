@@ -1,0 +1,16 @@
+@import "../../../base/variables";
+
+.advantage__image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  @media #{$from-tablet} {
+    position: absolute;
+  }
+}
+
+// Boolean
+@import "advantage__image_main-city";
+@import "advantage__image_main-bridge";

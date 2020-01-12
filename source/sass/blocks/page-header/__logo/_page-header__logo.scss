@@ -1,0 +1,18 @@
+@import "../../../base/variables";
+
+.page-header__logo {
+  $z-index: map-get($z-index-layers, header);
+
+  position: absolute;
+  z-index: $z-index;
+  top: calc(100%);
+  left: 50%;
+
+  transform: translate(-50%, -56px);
+
+  @media #{$from-tablet} {
+    top: 0;
+
+    transform: translateX(-50%);
+  }
+}

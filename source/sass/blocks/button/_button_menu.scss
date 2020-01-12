@@ -1,0 +1,15 @@
+@import "../../base/variables";
+
+.button_menu {
+  @media #{$from-tablet} {
+    display: none;
+  }
+}
+
+.navigation_no-js ~ .button_menu {
+  display: none;
+}
+
+.navigation_visible ~ .button_menu {
+  display: none;
+}

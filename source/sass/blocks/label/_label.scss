@@ -1,0 +1,36 @@
+@import "../../base/variables";
+
+.label {
+  font-weight: normal;
+
+  display: inline-flex;
+  flex-shrink: 0;
+
+  user-select: none;
+  vertical-align: top;
+  text-transform: uppercase;
+
+  &::after {
+    content: ":";
+  }
+}
+
+.input__input:not(:disabled) ~ .label {
+  cursor: pointer;
+}
+
+.input_type_checkbox + .label {
+  @media #{$from-tablet} {
+    max-width: 160px;
+
+    word-break: break-word;
+  }
+}
+
+.input_type_radio + .label {
+  max-width: 100%;
+}
+
+// Boolean
+@import "label_required";
+@import "label_strong";

@@ -1,0 +1,62 @@
+@import "../../base/variables";
+
+.advantage {
+  $background-color: $gallery;
+  $padding: 26px, 20px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: nth($padding, 1) nth($padding, 2) 28px;
+
+  counter-increment: advantages;
+  text-align: center;
+
+  background-color: $background-color;
+
+  &::before {
+    @media #{$to-tablet} {
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: calc(100% - #{nth($padding, 2) * 2});
+      height: 0;
+
+      content: "";
+      transform: translateX(-50%);
+
+      border-top: 1px solid rgba(black, 0.1);
+    }
+  }
+
+  @media #{$from-tablet} {
+    width: calc(100% / 3);
+    min-height: 256px;
+    padding-top: 42px;
+  }
+}
+
+.grid__column:first-child .advantage {
+  @media #{$to-tablet} {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+// Boolean
+@import "advantage_reverse";
+@import "advantage_special";
+
+// Элементы
+@import "__description/advantage__description";
+@import "__heading/advantage__heading";
+@import "__image/advantage__image";
+@import "__inner/advantage__inner";
+@import "__picture/advantage__picture";

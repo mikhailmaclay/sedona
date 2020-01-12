@@ -1,0 +1,77 @@
+@import "../../base/variables";
+@import "../../base/mixins";
+
+.button {
+  $background-color: (default: $half-baked, hover: $fountain-blue, active: $fountain-blue, disabled: $mercury);
+  $transition: $base-transition;
+
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: 100%;
+  line-height: 1;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 58px;
+  padding: 0 14px;
+
+  cursor: pointer;
+  user-select: none;
+  transition: background-color $transition, color $transition;
+  vertical-align: top;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: white;
+  border: none;
+  background-color: map-get($background-color, default);
+
+  &:hover {
+    background-color: map-get($background-color, hover);
+  }
+
+  &:active {
+    background-color: map-get($background-color, active);
+  }
+
+  &:disabled {
+    cursor: auto;
+
+    background-color: map-get($background-color, disabled);
+  }
+}
+
+a.button:not([href]) {
+  &:hover,
+  &:active {
+    cursor: no-drop;
+
+    background-color: $half-baked;
+  }
+}
+
+// Theme
+@import "_theme/button_theme_checkbox";
+@import "_theme/button_theme_radio";
+@import "_theme/button_theme_range";
+@import "_theme/button_theme_square";
+@import "_theme/button_theme_x-ray";
+
+// Boolean
+@import "button_cta";
+@import "button_error";
+@import "button_like";
+@import "button_menu";
+@import "button_modal";
+@import "button_navigation";
+@import "button_player";
+@import "button_review";
+
+// Элементы
+@import "__icon/button__icon";
+@import "__text/button__text";
+@import "__tick/button__tick";

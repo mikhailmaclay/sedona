@@ -1,0 +1,24 @@
+@import "../../base/variables";
+
+.collar_bottom {
+  &::after {
+    bottom: 0;
+
+    height: 26px;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% calc(100% + 2px);
+
+    @media #{$from-tablet} {
+      height: 57px;
+
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+
+    @media #{$from-desktop} {
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
+}

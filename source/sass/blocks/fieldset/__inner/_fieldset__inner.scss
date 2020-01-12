@@ -1,0 +1,34 @@
+@import "../../../base/variables";
+
+.fieldset_attractions .fieldset__inner {
+  @media #{$from-tablet} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: -22px;
+
+    @media #{$from-tablet} {
+      margin-bottom: -30px;
+    }
+  }
+
+  @media #{$from-tablet} and #{$to-desktop} {
+    width: 71%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media #{$from-desktop} {
+    justify-content: space-between;
+  }
+}
+
+.fieldset_contact .fieldset__inner {
+  @media #{$from-desktop} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

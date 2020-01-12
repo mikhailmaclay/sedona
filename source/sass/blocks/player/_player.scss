@@ -1,0 +1,27 @@
+@import "../../base/variables";
+
+.player {
+  position: relative;
+
+  width: 320px;
+  margin: 0 auto;
+
+  @media #{$to-tablet} {
+    border-bottom: 66px solid transparent;
+  }
+
+  @media #{$from-tablet} {
+    width: 648px;
+  }
+
+  @media #{$from-desktop} {
+    width: 800px;
+  }
+}
+
+// Элементы
+@import "__button/player__button";
+@import "__controls/player__controls";
+@import "__cover/player__cover";
+@import "__picture/player__picture";
+@import "__progress/player__progress";

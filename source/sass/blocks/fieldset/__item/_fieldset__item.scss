@@ -1,0 +1,49 @@
+@import "../../../base/variables";
+
+.fieldset__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.fieldset_contact .fieldset__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media #{$from-tablet} {
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.fieldset_impression .fieldset__item {
+  &:not(:last-child) {
+    margin-bottom: 11px;
+
+    @media #{$from-tablet} {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.fieldset_attractions .fieldset__item {
+  &:nth-child(odd) {
+    @media #{$from-tablet} and #{$to-desktop} {
+      margin-right: 60px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 22px;
+
+    @media #{$from-tablet} {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.fieldset_introduce .fieldset__item {
+  @media #{$from-desktop} {
+    margin-left: 19px;
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../base/variables";
+
+.form_review {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$from-tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

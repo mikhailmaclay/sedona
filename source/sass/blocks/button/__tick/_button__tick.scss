@@ -1,0 +1,26 @@
+@import "../../../base/variables";
+
+.button_theme_radio .button__tick {
+  $background-color: $mine-shaft;
+  $transition: $base-transition;
+
+  width: 22px;
+  height: 22px;
+
+  transition: opacity $transition;
+
+  border-radius: 50%;
+  background-color: $background-color;
+}
+
+.input__input + .input__button .button__tick {
+  opacity: 0;
+}
+
+.input__input:checked + .input__button .button__tick {
+  opacity: 1;
+}
+
+.input__input:not(:disabled) + .input__button:active .button__tick {
+  opacity: 0.3;
+}

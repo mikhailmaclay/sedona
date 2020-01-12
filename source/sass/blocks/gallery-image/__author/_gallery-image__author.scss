@@ -1,0 +1,14 @@
+@import "../../../base/variables";
+
+.gallery-image__author {
+  line-height: 1.6;
+
+  &::before {
+    content: "Автор фото: ";
+    white-space: pre;
+  }
+
+  @media #{$from-desktop} {
+    color: white;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../base/variables";
+
+.advantage_special .advantage__inner {
+  $background-color: $half-baked;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  min-height: 191px;
+  padding: 40px 20px;
+
+  background-color: $background-color;
+
+  @media #{$from-tablet} {
+    width: calc(100% / 3);
+    min-height: 256px;
+  }
+
+  @media #{$from-desktop} {
+    padding-top: 48px;
+  }
+}
+
+.advantage_special.advantage_first .advantage__inner {
+  padding-top: 56px;
+  padding-bottom: 42px;
+
+  @media #{$from-tablet} {
+    padding-top: 42px;
+  }
+
+  @media #{$from-desktop} {
+    // Дублирую
+    padding-top: 48px;
+  }
+}
+
+.page_ie11 .advantage__inner {
+  max-width: 100%;
+}

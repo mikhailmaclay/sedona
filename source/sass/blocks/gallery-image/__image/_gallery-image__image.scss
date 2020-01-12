@@ -1,0 +1,10 @@
+.gallery-image__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: auto;
+  height: 100%;
+
+  transform: translateX(-50%);
+}

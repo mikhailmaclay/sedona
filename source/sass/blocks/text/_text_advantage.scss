@@ -1,0 +1,18 @@
+@import "../../base/variables";
+
+.text_advantage {
+  text-transform: uppercase;
+
+  @media #{$from-tablet} {
+    max-width: 162px;
+  }
+
+  @media #{$from-desktop} {
+    max-width: 283px;
+  }
+}
+
+
+.advantage_special .text_advantage {
+  color: white;
+}

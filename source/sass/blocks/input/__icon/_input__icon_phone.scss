@@ -1,0 +1,9 @@
+.input_iconed .input__icon_phone {
+  &::before {
+    width: 18px;
+    height: 18px;
+
+    content: url("../img/icon-sprite.svg#icon-phone");
+    transform: translate(-50%, -50%);
+  }
+}

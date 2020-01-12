@@ -1,0 +1,65 @@
+@import "../../base/variables";
+
+.gallery-image {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  @media #{$to-tablet} {
+    padding: 22px 0 19px;
+
+    &::before,
+    &::after {
+      $border-color: $alto;
+
+      position: absolute;
+      right: -20px;
+      left: -20px;
+
+      display: none;
+
+      height: 0;
+
+      content: "";
+
+      border-top: 1px solid $border-color;
+    }
+
+    &::before {
+      top: 0;
+
+      display: block;
+    }
+
+    &:last-child {
+      &::after {
+        bottom: 0;
+
+        display: block;
+      }
+    }
+  }
+
+  @media #{$from-tablet} {
+    width: calc(100% / 2);
+  }
+
+  @media #{$from-desktop} {
+    width: calc(100% / 3);
+  }
+}
+
+// Boolean
+@import "gallery-image_special";
+
+// Элементы
+@import "__author/gallery-image__author";
+@import "__button/gallery-image__button";
+@import "__image/gallery-image__image";
+@import "__inner/gallery-image__inner";
+@import "__meta/gallery-image__meta";
+@import "__picture/gallery-image__picture";
+@import "__title/gallery-image__title";

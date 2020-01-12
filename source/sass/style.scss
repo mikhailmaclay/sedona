@@ -1,0 +1,50 @@
+// Шрифты
+@import "base/fonts";
+
+// Помощники
+@import "base/hidden";
+@import "base/line-breaker";
+@import "base/visually-hidden";
+
+// Текстовые блоки
+@import "blocks/heading/heading";
+@import "blocks/label/label";
+@import "blocks/link/link";
+@import "blocks/text/text";
+
+// Мелкие самодостаточные блоки
+@import "blocks/button/button";
+@import "blocks/collar/collar";
+@import "blocks/icon/icon";
+@import "blocks/advantage/advantage";
+@import "blocks/feature/feature";
+@import "blocks/container/container";
+@import "blocks/overlay/overlay";
+
+// Собирательные блоки
+@import "blocks/created-by/created-by";
+@import "blocks/fieldset/fieldset";
+@import "blocks/field/field";
+@import "blocks/input/input";
+@import "blocks/logo-link/logo-link";
+@import "blocks/navigation/navigation";
+@import "blocks/social/social";
+@import "blocks/form/form";
+@import "blocks/gallery-image/gallery-image";
+@import "blocks/player/player";
+@import "blocks/modal/modal";
+
+// Контекстные семантические блоки
+@import "blocks/intro/intro";
+@import "blocks/cta/cta";
+@import "blocks/features/features";
+@import "blocks/section/section";
+@import "blocks/map/map";
+@import "blocks/reasons/reasons";
+@import "blocks/gallery-images/gallery-images";
+
+// Структурные блоки
+@import "blocks/page/page";
+@import "blocks/page-header/page-header";
+@import "blocks/page-main/page-main";
+@import "blocks/page-footer/page-footer";

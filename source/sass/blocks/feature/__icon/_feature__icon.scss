@@ -1,0 +1,17 @@
+@import "../../../base/variables";
+@import "../variables";
+
+.feature__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateY(-25%);
+
+  @media #{$from-tablet} {
+    top: 60px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+}

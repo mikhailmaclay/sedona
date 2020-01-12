@@ -1,0 +1,24 @@
+@import "../../base/variables";
+@import "variables";
+
+.feature {
+  position: relative;
+
+  display: flex;
+
+  box-sizing: border-box;
+
+  @media #{$from-tablet} {
+    align-items: center;
+    flex-direction: column;
+
+    min-height: 330px;
+    padding: 20px 0;
+  }
+}
+
+// Элементы
+@import "__description/feature__description";
+@import "__heading/feature__heading";
+@import "__icon/feature__icon";
+@import "__inner/feature__inner";

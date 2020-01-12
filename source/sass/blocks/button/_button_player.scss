@@ -1,0 +1,20 @@
+@import "../../base/variables";
+
+.button_player {
+  $color: $shuttle-gray;
+
+  color: $color;
+
+  @media #{$to-tablet} {
+    &:hover,
+    &:active {
+      $color: $mine-shaft;
+
+      color: $color;
+    }
+  }
+
+  @media #{$from-tablet} {
+    color: white;
+  }
+}

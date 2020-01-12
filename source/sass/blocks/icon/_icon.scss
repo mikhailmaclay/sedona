@@ -1,0 +1,19 @@
+@import "../../base/variables";
+
+.icon {
+  $transition: $base-transition;
+
+  flex-shrink: 0;
+
+  transition: opacity $transition;
+}
+
+// Fill
+@import "_fill/icon_fill_current";
+@import "_fill/icon_fill_half-baked";
+@import "_fill/icon_fill_white";
+
+// Boolean
+@import "icon_feature-food";
+@import "icon_feature-housing";
+@import "icon_feature-souvenir";

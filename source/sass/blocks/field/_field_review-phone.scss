@@ -1,0 +1,7 @@
+@import "../../base/variables";
+
+.field_review-phone {
+  @media #{$from-desktop} {
+    flex-direction: row;
+  }
+}

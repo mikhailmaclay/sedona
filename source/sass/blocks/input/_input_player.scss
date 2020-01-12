@@ -1,0 +1,7 @@
+@import "../../base/variables";
+
+.input_player.input_type_range {
+  @media #{$from-tablet} {
+    width: 540px;
+  }
+}

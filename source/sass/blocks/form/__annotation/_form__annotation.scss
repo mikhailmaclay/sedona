@@ -1,0 +1,9 @@
+@import "../../../base/variables";
+
+.form_review .form__annotation {
+  margin: 0;
+
+  @media #{$to-tablet} {
+    display: none;
+  }
+}

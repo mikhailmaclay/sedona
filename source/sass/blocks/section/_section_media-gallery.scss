@@ -1,0 +1,13 @@
+@import "../../base/variables";
+
+.section_media-gallery.section_internal-first {
+  padding-bottom: 28px;
+
+  @media #{$from-tablet} {
+    padding-bottom: 69px;
+  }
+
+  @media #{$from-desktop} {
+    padding-bottom: 71px;
+  }
+}

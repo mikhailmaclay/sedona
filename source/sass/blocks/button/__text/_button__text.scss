@@ -1,0 +1,39 @@
+@import "../../../base/variables";
+
+.button__text {
+  $transition: $base-transition;
+
+  overflow: hidden;
+
+  max-width: 100%;
+
+  transition: opacity $transition;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+
+.button:active .button__text {
+  opacity: 0.3;
+}
+
+.button:disabled .button__text {
+  opacity: 1;
+}
+
+a.button:not([href]) {
+  &:hover,
+  &:active {
+    .button__text {
+      opacity: 1;
+    }
+  }
+}
+
+.button_like .button__text {
+  font-size: 14px;
+
+  @media #{$from-desktop} {
+    color: white;
+  }
+}

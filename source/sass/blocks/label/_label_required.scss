@@ -1,0 +1,12 @@
+.label_required {
+  &::after {
+    content: "*" + ":";
+    white-space: pre;
+  }
+}
+
+.label_strong.label_required {
+  &::after {
+    content: "*";
+  }
+}

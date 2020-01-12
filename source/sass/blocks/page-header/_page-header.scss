@@ -1,0 +1,28 @@
+@import "../../base/variables";
+
+.page-header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  padding: 18px 20px;
+
+  background-color: white;
+
+  @media #{$from-tablet} {
+    min-height: 56px;
+    padding: 10px 26px 10px 49px;
+  }
+
+  @media #{$from-desktop} {
+    padding: 10px 70px 10px 91px;
+  }
+}
+
+// Элементы
+@import "__logo/page-header__logo";
+@import "__menu/page-header__menu";
+@import "__navigation/page-header__navigation";

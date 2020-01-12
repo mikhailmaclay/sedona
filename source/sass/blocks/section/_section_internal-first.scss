@@ -1,0 +1,15 @@
+@import "../../base/variables";
+
+.section_internal-first {
+  padding-top: 37px;
+  padding-bottom: 14px;
+
+  @media #{$from-tablet} {
+    padding-top: 67px;
+  }
+
+  @media #{$from-desktop} {
+    padding-top: 104px;
+    padding-bottom: 0;
+  }
+}

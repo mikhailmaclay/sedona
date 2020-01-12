@@ -1,0 +1,13 @@
+@import "../../base/variables";
+
+.button_modal.button_error {
+  font-size: 18px;
+
+  display: flex;
+
+  width: 180px;
+
+  @media #{$from-tablet} {
+    width: 272px;
+  }
+}

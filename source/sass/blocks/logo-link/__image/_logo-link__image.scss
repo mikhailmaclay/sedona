@@ -1,0 +1,18 @@
+@import "../../../base/variables";
+
+.logo-link__image {
+  display: inline-flex;
+
+  vertical-align: top;
+}
+
+.logo-link_main .logo-link__image {
+  position: absolute;
+  left: 50%;
+
+  width: auto;
+  height: 100%;
+
+  transform: translateX(-50%);
+  pointer-events: none;
+}

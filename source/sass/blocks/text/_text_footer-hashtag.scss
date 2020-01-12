@@ -1,0 +1,13 @@
+.text_footer-hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+
+  display: block;
+
+  text-transform: uppercase;
+
+  &::before {
+    content: "#";
+  }
+}

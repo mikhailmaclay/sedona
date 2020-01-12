@@ -1,0 +1,11 @@
+@import "../../../base/variables";
+
+.page-footer__social {
+  margin-bottom: 39px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 0;
+
+    transform: translateX(-6px);
+  }
+}

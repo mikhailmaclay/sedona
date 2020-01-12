@@ -1,0 +1,27 @@
+@import "../../../base/variables";
+
+.features__item {
+  width: 100%;
+
+  @media #{$from-tablet} {
+    width: calc(100% / 3);
+  }
+
+  &:not(:only-child):not(:last-child) {
+    @media #{$to-tablet} {
+      margin-bottom: 27px;
+    }
+
+    &:nth-child(3) {
+      @media #{$from-tablet} {
+        order: 2;
+      }
+    }
+
+    &:nth-child(4) {
+      @media #{$from-tablet} {
+        order: 3;
+      }
+    }
+  }
+}

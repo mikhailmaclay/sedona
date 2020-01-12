@@ -1,0 +1,11 @@
+@import "variables";
+
+.hidden {
+  white-space: pre;
+
+  &_from-desktop {
+    @media #{$from-desktop} {
+      display: none;
+    }
+  }
+}

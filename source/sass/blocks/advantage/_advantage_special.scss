@@ -1,0 +1,21 @@
+@import "../../base/variables";
+
+.advantage_special {
+  width: 100%;
+  padding: 0;
+
+  background-color: transparent;
+
+  &::before {
+    display: none;
+  }
+
+  @media #{$from-tablet} {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    min-height: auto;
+  }
+}

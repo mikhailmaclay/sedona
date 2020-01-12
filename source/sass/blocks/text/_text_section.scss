@@ -1,0 +1,12 @@
+@import "../../base/variables";
+
+.text_section {
+  line-height: 1.75;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media #{$from-tablet} {
+    max-width: 490px;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../../base/variables";
+
+.field__item {
+  &.label:first-child {
+    align-self: flex-start;
+
+    margin: 0 0 14px 22px;
+  }
+}
+
+.field_row .field__item {
+  &.label:first-child {
+    align-self: center;
+  }
+
+  &:not(:only-child):first-child {
+    margin: 0 16px 0 0;
+
+    &.input_type_radio,
+    &.input_type_checkbox {
+      margin-right: 20px;
+    }
+  }
+}
+
+.field_review-phone,
+.field_review-mail {
+  .field__item {
+    &.label:first-child {
+      margin-bottom: 8px;
+
+      @media #{$from-tablet} {
+        margin-bottom: 9px;
+      }
+
+      @media #{$from-desktop} {
+        align-self: center;
+      }
+    }
+
+    &:not(:only-child):first-child {
+      @media #{$from-desktop} {
+        margin: 0 16px 0 0;
+      }
+    }
+  }
+}

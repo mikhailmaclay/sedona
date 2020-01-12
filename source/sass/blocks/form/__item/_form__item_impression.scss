@@ -1,0 +1,15 @@
+@import "../../../base/variables";
+
+.form__item_impression {
+  @media #{$from-tablet} {
+    order: -1;
+
+    width: calc(100% / 2);
+    padding-top: 59px;
+    padding-left: 60px;
+  }
+
+  @media #{$from-desktop} {
+    padding-left: 120px;
+  }
+}

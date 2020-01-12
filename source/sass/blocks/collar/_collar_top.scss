@@ -1,0 +1,21 @@
+@import "../../base/variables";
+
+.collar_top {
+  @media #{$to-tablet} {
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+
+      height: 26px;
+
+      content: "";
+
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: center -11px;
+      background-size: cover;
+    }
+  }
+}

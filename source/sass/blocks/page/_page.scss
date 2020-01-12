@@ -1,0 +1,26 @@
+@import "../../base/variables";
+
+.page {
+  $background-color: $concrete;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+
+  counter-reset: advantages;
+
+  color: $mine-shaft;
+  background-color: $background-color;
+}
+
+// Boolean
+@import "page_overlay";
+
+// Элементы
+@import "__body/page__body";
+@import "__footer/page__footer";
+@import "__gallery/page__gallery";
+@import "__inner/page__inner";
+@import "__main/page__main";
+@import "__navigation/page__navigation";
+@import "__video/page__video";

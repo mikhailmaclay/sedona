@@ -1,0 +1,15 @@
+@import "../../base/variables";
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  @media #{$to-tablet} {
+    padding: 35px 20px;
+  }
+}
+
+// Элементы
+@import "__item/features__item";

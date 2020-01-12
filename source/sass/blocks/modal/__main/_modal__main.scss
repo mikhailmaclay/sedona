@@ -1,0 +1,17 @@
+@import "../../../base/variables";
+
+.modal__main {
+  padding: 44px 50px 36px;
+
+  @media #{$from-tablet} {
+    padding: 64px 64px 40px;
+  }
+}
+
+.modal_error .modal__main {
+  padding: 41px 50px 35px;
+
+  @media #{$from-tablet} {
+    padding: 62px 62px 50px;
+  }
+}

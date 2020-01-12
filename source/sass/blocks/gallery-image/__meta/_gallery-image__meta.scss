@@ -1,0 +1,47 @@
+@import "../../../base/variables";
+
+.gallery-image__meta {
+  @media #{$from-tablet} {
+    $background-color: $concrete;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    min-height: 80px;
+    padding: 17px 28px 20px 20px;
+
+    background-color: $background-color;
+  }
+
+  @media #{$from-desktop} {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(black, 0.3);
+  }
+}
+
+.gallery-image:nth-child(odd):not(.gallery-image_special) .gallery-image__meta {
+  @media #{$from-tablet} and #{$to-desktop} {
+    $background-color: $terrace;
+
+    background-color: $background-color;
+  }
+
+  @media #{$from-tablet} {
+    padding-right: 34px;
+  }
+}
+
+.gallery-image_special .gallery-image__meta {
+  @media #{$from-tablet} {
+    padding-right: 22px;
+  }
+}

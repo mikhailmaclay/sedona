@@ -1,0 +1,28 @@
+$z-index-layers: (overlay: 9, navigation: 8, focus: 7, header: 6, backdrop: 1, content: 2);
+$base-transition: 0.25s;
+
+// Цвета
+$half-baked: #81b3d2;
+$fountain-blue: #669ec0;
+$mercury: #e5e5e5;
+$gallery: #eeeeee;
+$terrace: #eaeaea;
+$mine-shaft: #333333;
+$concrete: #f2f2f2;
+$alto: #d5d5d5;
+$silver-chalice: #b2b2b2;
+$sail: #bbdefa;
+$shuttle-gray: #5c6870;
+$deco: #cce0a3;
+
+// Размеры
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+// Медиа-запросы
+$from-tablet: (min-width: $tablet-width);
+$from-desktop: (min-width: $desktop-width);
+$to-tablet: (max-width: ($tablet-width - 1px));
+$to-desktop: (max-width: ($desktop-width - 1px));
+$retina: (min-resolution: 1.5dppx);

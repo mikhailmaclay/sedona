@@ -1,0 +1,15 @@
+@import "../../../base/variables";
+
+.navigation__close {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
+  @media #{$from-tablet} {
+    display: none;
+  }
+}
+
+.navigation_no-js .navigation__close {
+  display: none;
+}

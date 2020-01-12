@@ -1,0 +1,23 @@
+@import "../../../base/variables";
+
+.gallery-image__picture {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  width: 100%;
+  height: 280px;
+  margin-bottom: 19px;
+
+  @media #{$from-tablet} {
+    height: 267px;
+    margin-bottom: 0;
+  }
+}
+
+.gallery-image_special .gallery-image__picture {
+  @media #{$from-tablet} {
+    height: 400px;
+  }
+}

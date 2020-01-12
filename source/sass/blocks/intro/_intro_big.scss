@@ -1,0 +1,14 @@
+@import "../../base/variables";
+
+.intro_big {
+  min-height: 389px;
+
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  @media #{$from-tablet} {
+    min-height: 518px;
+
+    background-size: cover;
+  }
+}

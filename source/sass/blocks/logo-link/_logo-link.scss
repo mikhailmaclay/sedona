@@ -1,0 +1,16 @@
+@import "../../base/variables";
+
+.logo-link {
+  $transition: $base-transition;
+
+  font-size: 0;
+
+  transition: opacity $transition;
+}
+
+// Boolean
+@import "logo-link_htmlacademy";
+@import "logo-link_main";
+
+// Элементы
+@import "__image/logo-link__image";

@@ -1,0 +1,44 @@
+@import "../../base/variables";
+
+.heading_advantage {
+  font-size: 18px;
+  line-height: 1.4;
+
+  text-transform: uppercase;
+
+  &::after {
+    $color: $mine-shaft;
+
+    font-size: 14px;
+    font-weight: normal;
+
+    display: block;
+
+    margin-top: 10px;
+
+    content: "— №" counter(advantages) " —";
+    white-space: pre;
+
+    color: $color;
+  }
+
+  @media #{$from-tablet} {
+    font-size: 21px;
+
+    max-width: 151px;
+
+    &::after {
+      margin-top: 7px;
+    }
+  }
+}
+
+.advantage_special .heading_advantage {
+  color: white;
+
+  &::after {
+    margin-top: 10px;
+
+    color: white;
+  }
+}

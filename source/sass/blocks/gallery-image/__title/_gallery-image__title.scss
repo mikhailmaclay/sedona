@@ -1,0 +1,17 @@
+@import "../../../base/variables";
+
+.gallery-image__title {
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  color: black;
+
+  @media #{$from-tablet} {
+    margin-bottom: 2px;
+  }
+
+  @media #{$from-desktop} {
+    color: white;
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../base/variables";
+
+.form {
+  width: 100%;
+}
+
+// Boolean
+@import "form_review";
+
+// Элементы
+@import "__annotation/form__annotation";
+@import "__item/form__item";

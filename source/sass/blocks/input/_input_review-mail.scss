@@ -1,0 +1,7 @@
+@import "../../base/variables";
+
+.input_type_text.input_iconed.input_review-mail {
+  @media #{$from-desktop} {
+    width: 316px;
+  }
+}

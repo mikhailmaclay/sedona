@@ -1,0 +1,16 @@
+@import "../../base/variables";
+
+.heading_feature {
+  font-size: 18px;
+  line-height: 1.4;
+
+  text-transform: uppercase;
+
+  @media #{$from-tablet} {
+    font-size: 21px;
+
+    max-width: 150px;
+
+    text-align: center;
+  }
+}

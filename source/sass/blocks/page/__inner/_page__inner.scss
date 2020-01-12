@@ -1,0 +1,29 @@
+@import "../../../base/variables";
+
+.page__inner {
+  $max-width: $mobile-width;
+  $min-width: $mobile-width;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: $min-width;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  background-color: white;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+
+
+  @media #{$from-tablet} {
+    $max-width: $tablet-width;
+
+    max-width: $max-width;
+  }
+
+  @media #{$from-desktop} {
+    $max-width: $desktop-width - 80px;
+
+    max-width: $max-width;
+  }
+}

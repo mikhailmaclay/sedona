@@ -1,0 +1,17 @@
+@import "../../base/variables";
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+// Boolean
+@import "fieldset_attractions";
+@import "fieldset_border";
+
+// Элементы
+@import "__heading/fieldset__heading";
+@import "__inner/fieldset__inner";
+@import "__item/fieldset__item";

@@ -1,0 +1,53 @@
+@import "../../../base/variables";
+
+.button__icon {
+  pointer-events: none;
+}
+
+.button:active .button__icon {
+  $transition: $base-transition;
+
+  transition: opacity $transition;
+
+  opacity: 0.3;
+}
+
+.button:disabled .button__icon {
+  opacity: 1;
+}
+
+a.button:not([href]) {
+  &:hover,
+  &:active {
+    .button__icon {
+      opacity: 1;
+    }
+  }
+}
+
+.button_like .button__icon {
+  $color: $silver-chalice;
+
+  margin-right: 14px;
+
+  color: $color;
+
+  @media #{$from-desktop} {
+    color: white;
+  }
+}
+
+.gallery-image_special .button__icon {
+  @media #{$from-tablet} {
+    margin-right: 7px;
+  }
+}
+
+.button_theme_range .button__icon {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+
+  border-radius: 50%;
+  background-color: white;
+}

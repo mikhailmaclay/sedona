@@ -1,0 +1,15 @@
+@import "../../base/variables";
+
+.text_feature {
+  text-transform: uppercase;
+
+  @media #{$from-tablet} {
+    max-width: 162px;
+
+    text-align: center;
+  }
+
+  @media #{$from-desktop} {
+    max-width: 283px;
+  }
+}

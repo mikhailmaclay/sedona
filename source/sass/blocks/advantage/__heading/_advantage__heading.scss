@@ -1,0 +1,15 @@
+@import "../../../base/variables";
+
+.advantage__heading {
+  margin: 0 0 17px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 23px;
+  }
+}
+
+.advantage_special .advantage__heading {
+  @media #{$from-tablet} {
+    margin-bottom: 20px;
+  }
+}

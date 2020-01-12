@@ -1,0 +1,22 @@
+@import "../../../base/variables";
+
+.input_type_range .input__button {
+  $z-index: map-get($z-index-layers, content);
+
+  position: absolute;
+  z-index: $z-index;
+  top: calc(50% + 6px);
+  left: calc(18% + 6px);
+
+  transform: translate(-50%, -50%);
+
+  @media #{$from-tablet} {
+    left: 30%;
+  }
+
+  @media #{$from-desktop} {
+    left: 21%;
+  }
+}
+
+@import "input__button_range";

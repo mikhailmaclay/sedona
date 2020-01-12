@@ -1,0 +1,20 @@
+@import "../../base/variables";
+
+.intro_small {
+  min-height: 158px;
+
+  background-position: 50% 100%;
+  background-size: auto 245%;
+
+  @media #{$from-tablet} {
+    min-height: 290px;
+
+    background-size: auto 180%;
+  }
+
+  @media #{$from-desktop} {
+    min-height: 301px;
+
+    background-size: auto 175%;
+  }
+}

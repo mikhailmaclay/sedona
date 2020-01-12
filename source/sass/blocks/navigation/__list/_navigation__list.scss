@@ -1,0 +1,21 @@
+@import "../../../base/variables";
+@import "../../../base/mixins";
+
+.navigation__list {
+  @include list-reset;
+}
+
+.navigation_header .navigation__list {
+  @media #{$from-tablet} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-right: -50px;
+    margin-bottom: -25px;
+  }
+
+  @media #{$from-desktop} {
+    margin-right: -162px;
+  }
+}

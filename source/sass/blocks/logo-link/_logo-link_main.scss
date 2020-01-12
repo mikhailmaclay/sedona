@@ -1,0 +1,11 @@
+@import "../../base/variables";
+
+.logo-link_main {
+  width: 102px;
+  height: 83px;
+
+  @media #{$from-desktop} {
+    width: 188px;
+    height: 96px;
+  }
+}

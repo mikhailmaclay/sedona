@@ -1,0 +1,9 @@
+@import "../../../base/variables";
+
+.gallery-image__button {
+  transform: translateY(-4px);
+
+  @media #{$from-tablet} {
+    transform: translateY(-2px);
+  }
+}

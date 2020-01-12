@@ -1,0 +1,9 @@
+@import "../../../base/variables";
+
+.form__item_attractions {
+  &:not(:last-child) {
+    @media #{$from-tablet} {
+      margin-bottom: 64px;
+    }
+  }
+}

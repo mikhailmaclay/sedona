@@ -1,0 +1,20 @@
+@import "../../base/variables";
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset_attractions .field {
+  @media #{$from-tablet} and #{$to-desktop} {
+    width: 200px;
+  }
+}
+
+// Boolean
+@import "field_review-mail";
+@import "field_review-phone";
+@import "field_row";
+
+// Элементы
+@import "__item/field__item";

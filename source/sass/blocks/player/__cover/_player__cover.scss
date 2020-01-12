@@ -1,0 +1,12 @@
+.player__cover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: auto;
+  height: 100%;
+
+  user-select: none;
+  transform: translateX(-50%);
+  pointer-events: none;
+}

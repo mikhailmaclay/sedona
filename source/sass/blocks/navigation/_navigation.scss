@@ -1,0 +1,21 @@
+@import "../../base/variables";
+
+.navigation {
+  position: relative;
+
+  @media #{$to-tablet} {
+    display: none;
+
+    width: calc(100% + 40px);
+  }
+}
+
+// Boolean
+@import "navigation_header";
+@import "navigation_no-js";
+@import "navigation_visible";
+
+// Элементы
+@import "__close/navigation__close";
+@import "__list/navigation__list";
+@import "__list-item/navigation__list-item";

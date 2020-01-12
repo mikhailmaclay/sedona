@@ -1,0 +1,11 @@
+@import "../../../base/mixins";
+
+.social__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -6px;
+  margin-bottom: -6px;
+}

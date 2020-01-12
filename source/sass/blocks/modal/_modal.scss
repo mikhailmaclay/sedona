@@ -1,0 +1,25 @@
+@import "../../base/variables";
+
+.modal {
+  display: none;
+
+  width: 320px;
+
+  background-color: white;
+  box-shadow: 0 7px 15px 0 rgba(black, 0.15);
+
+  @media #{$from-tablet} {
+    width: 640px;
+  }
+}
+
+// Boolean
+@import "modal_error";
+@import "modal_visible";
+
+// Элементы
+@import "__button/modal__button";
+@import "__footer/modal__footer";
+@import "__heading/modal__heading";
+@import "__main/modal__main";
+@import "__text/modal__text";

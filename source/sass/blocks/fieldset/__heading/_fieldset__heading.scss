@@ -1,0 +1,63 @@
+@import "../../../base/variables";
+
+.fieldset__heading {
+  align-self: center;
+
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+
+  @media #{$from-tablet} {
+    margin-bottom: 60px;
+  }
+}
+
+.fieldset_contact .fieldset__heading {
+  margin-bottom: 24px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 28px;
+  }
+
+  @media #{$from-desktop} {
+    margin-bottom: 75px;
+  }
+}
+
+.fieldset_impression .fieldset__heading {
+  margin-bottom: 24px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 58px;
+  }
+
+  @media #{$from-desktop} {
+    margin-left: 80px;
+  }
+}
+
+.fieldset_attractions .fieldset__heading {
+  margin-bottom: 16px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 39px;
+  }
+}
+
+.fieldset_message .fieldset__heading {
+  margin-bottom: 15px;
+
+  @media #{$from-tablet} {
+    margin-bottom: 56px;
+  }
+}
+
+.fieldset_introduce .fieldset__heading {
+  @media #{$from-tablet} {
+    margin-bottom: 58px;
+  }
+
+  @media #{$from-desktop} {
+    margin-left: 21px;
+  }
+}

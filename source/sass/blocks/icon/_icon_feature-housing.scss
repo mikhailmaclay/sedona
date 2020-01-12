@@ -1,0 +1,11 @@
+@import "../../base/variables";
+
+.icon_feature-housing {
+  width: 37px;
+  height: 36px;
+
+  @media #{$from-tablet} {
+    width: 75px;
+    height: 72px;
+  }
+}
