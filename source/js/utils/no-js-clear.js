@@ -1,19 +1,17 @@
-'use strict';
-
 (function() {
   function getNoJSClass(element) {
-    var noJSClass;
+    var classList = Array.from(element.classList);
 
-    element.classList.forEach(function (className) {
+    for (var i = 0; i < classList.length; i++) {
+      var className = classList[i];
+
       if (/.+no-js/.test(className)) {
-        noJSClass = className;
+        return className;
       }
-    });
-
-    return noJSClass;
+    }
   }
 
-  document.querySelectorAll('[class*=no-js]').forEach(function (element) {
+  Array.from(document.querySelectorAll('[class*=no-js]')).forEach(function (element) {
     var noJSClass = getNoJSClass(element);
 
     element.classList.remove(noJSClass);

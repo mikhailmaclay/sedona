@@ -46,6 +46,12 @@
   }
 }
 
+.page_ie11 .input_type_text:not(.input_iconed) {
+  &:-ms-input-placeholder {
+    color: inherit;
+  }
+}
+
 .page_firefox .input_type_text:not(.input_iconed) {
   flex-grow: 1;
 

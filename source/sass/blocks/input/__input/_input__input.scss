@@ -45,3 +45,9 @@
     color: inherit;
   }
 }
+
+.page_ie11 .input__input_iconed {
+  &:-ms-input-placeholder {
+    color: inherit;
+  }
+}

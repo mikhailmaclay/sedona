@@ -1,6 +1,8 @@
 @import "../../../base/variables";
 
 .features__item {
+  width: 100%;
+
   @media #{$from-tablet} {
     width: calc(100% / 3);
   }

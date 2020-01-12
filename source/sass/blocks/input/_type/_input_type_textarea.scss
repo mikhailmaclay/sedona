@@ -40,3 +40,9 @@
     color: inherit;
   }
 }
+
+.page_ie11 .input_type_textarea {
+  &:-ms-input-placeholder {
+    color: inherit;
+  }
+}
