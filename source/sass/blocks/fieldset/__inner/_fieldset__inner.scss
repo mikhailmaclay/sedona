@@ -20,7 +20,7 @@
   }
 
   @media #{$from-desktop} {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 

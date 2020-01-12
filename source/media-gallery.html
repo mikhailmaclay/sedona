@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   </head>
   <body class="page__body">
     <h1 class="visually-hidden">Седона / Медиа-галерея</h1>
@@ -178,7 +180,7 @@
             <img class="player__cover" src="img/video-mobile@1x.jpg" alt="Обложка видео" width="320" height="201">
           </picture>
           <div class="player__controls">
-            <button class="player__button button button_theme_x-ray button_player" title="Повторить">
+            <button class="player__button button button_theme_x-ray button_player" type="button" title="Повторить">
               <svg class="button__icon icon icon_fill_current" width="16" height="20" aria-hidden="true" focusable="false">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#icon-video-replay"></use>
               </svg>
@@ -189,12 +191,12 @@
                 </button>
                 <span class="input__range"></span>
               </span>
-            <button class="player__button button button_theme_x-ray button_player" title="Субтитры">
+            <button class="player__button button button_theme_x-ray button_player" type="button" title="Субтитры">
               <svg class="button__icon icon icon_fill_current" width="32" height="20" aria-hidden="true" focusable="false">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#icon-video-subtitles"></use>
               </svg>
             </button>
-            <button class="player__button button button_theme_x-ray button_player" title="Полный экран">
+            <button class="player__button button button_theme_x-ray button_player" type="button" title="Полный экран">
               <svg class="button__icon icon icon_fill_current" width="20" height="20" aria-hidden="true" focusable="false">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#icon-video-fullscreen"></use>
               </svg>

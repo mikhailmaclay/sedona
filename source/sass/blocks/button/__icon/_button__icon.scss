@@ -51,3 +51,15 @@ a.button:not([href]) {
   border-radius: 50%;
   background-color: white;
 }
+
+.button_player:hover .button__icon {
+  @media #{$from-desktop} {
+    opacity: 0.6;
+  }
+}
+
+.button_player:active .button__icon {
+  @media #{$from-desktop} {
+    opacity: 0.3;
+  }
+}

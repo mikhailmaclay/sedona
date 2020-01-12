@@ -43,12 +43,23 @@
   }
 }
 
-a.button:not([href]) {
-  &:hover,
-  &:active {
-    @media #{$from-tablet} {
-      color: black;
+a.button_navigation:not([href]) {
+  @media #{$from-tablet} {
+    $color: (default: $pine-cone, hover: $kabul, active: rgba(black, 0.3));
+
+    color: map-get($color, default);
+
+    &:hover,
+    &:active {
       background-color: transparent;
+    }
+
+    &:hover {
+      color: map-get($color, hover);
+    }
+
+    &:active {
+      color: map-get($color, active);
     }
   }
 }
