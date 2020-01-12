@@ -1,6 +1,10 @@
 @import "../../../base/variables";
 
 .features__item {
+  @media #{$from-tablet} {
+    width: calc(100% / 3);
+  }
+
   &:not(:only-child):not(:last-child) {
     @media #{$to-tablet} {
       margin-bottom: 27px;
