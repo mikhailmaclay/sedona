@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   </head>
   <body class="page__body">
     <h1 class="visually-hidden">Седона / Отзыв</h1>
@@ -81,7 +83,7 @@
                   <div class="field field_review-phone">
                     <label class="field__item label label_required" for="phone"><span class="hidden hidden_from-desktop">Контактный </span>телефон</label>
                     <span class="field__item input input_type_text input_review-phone input_iconed">
-                    <input class="input__input input__input_iconed" id="phone" name="phone" type="text" placeholder="Введите телефон" required>
+                    <input class="input__input input__input_iconed" id="phone" name="phone" type="tel" placeholder="Введите телефон" required>
                     <span class="input__icon input__icon_phone"></span>
                   </span>
                   </div>
@@ -143,7 +145,7 @@
               <div class="fieldset__inner">
                 <div class="fieldset__item">
                   <div class="field field_row">
-                    <span class="field__item fieldset__item input input_type_checkbox">
+                    <span class="field__item input input_type_checkbox">
                       <input class="input__input visually-hidden" id="devils-bridge" name="attractions" type="checkbox" value="devils-bridge">
                       <label class="input__button button button_theme_checkbox" for="devils-bridge">
                         <svg class="button__tick icon icon_fill_mine-shaft" width="24" height="19">

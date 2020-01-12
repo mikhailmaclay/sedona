@@ -40,6 +40,18 @@
       margin-bottom: 30px;
     }
   }
+
+  @media #{$from-desktop} {
+    width: 22%;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 5%;
+    }
+
+    &:nth-child(4n-1) {
+      margin-right: 2%;
+    }
+  }
 }
 
 .fieldset_introduce .fieldset__item {

@@ -20,6 +20,8 @@
 }
 
 .input_type_checkbox + .label {
+  color: black;
+
   @media #{$from-tablet} {
     max-width: 160px;
 
@@ -29,6 +31,8 @@
 
 .input_type_radio + .label {
   max-width: 100%;
+
+  color: black;
 }
 
 // Boolean
