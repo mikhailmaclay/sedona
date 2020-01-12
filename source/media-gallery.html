@@ -19,8 +19,8 @@
           <li class="navigation__list-item"><a class="button button_navigation" href="review.html">Форма отзыва</a></li>
           <li class="navigation__list-item"><a class="button button_navigation" href="http://htmlacademy.ru">HTML Academy</a></li>
         </ul>
-        <button class="navigation__close button button_theme_x-ray" type="button" aria-label="Закрыть">
-          <svg class="button__icon icon icon_fill_white" width="23" height="22">
+        <button class="navigation__close button button_theme_x-ray" type="button" aria-label="Закрыть меню">
+          <svg class="button__icon icon icon_fill_white" width="23" height="22" aria-hidden="true" focusable="false">
             <use xlink:href="img/icon-sprite.svg#icon-cross"></use>
           </svg>
         </button>
@@ -33,8 +33,8 @@
           <img class="logo-link__image" src="img/logo-sedona-desktop.svg" alt="Седона" width="102" height="83">
         </picture>
       </a>
-      <button class="page-header__menu button button_theme_x-ray button_menu button_no-js" type="button">
-        <svg class="button__icon icon icon_fill_half-baked" width="23" height="21">
+      <button class="page-header__menu button button_theme_x-ray button_menu button_no-js" type="button" aria-label="Открыть меню">
+        <svg class="button__icon icon icon_fill_half-baked" width="23" height="21" aria-hidden="true" focusable="false">
           <use xlink:href="img/icon-sprite.svg#icon-menu"></use>
         </svg>
       </button>
@@ -51,13 +51,10 @@
         <div class="gallery-image gallery-image_special">
           <a href="#">
             <picture class="gallery-image__picture">
-              <source srcset="img/photo-sunset-desktop@2x.jpg" media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-              <source srcset="img/photo-sunset-tablet@2x.jpg" media="(min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-              <source srcset="img/photo-sunset-mobile@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
-              <source srcset="img/photo-sunset-desktop@1x.jpg" media="(min-width: 1280px)">
-              <source srcset="img/photo-sunset-tablet@1x.jpg" media="(min-width: 768px)">
-              <source srcset="img/photo-sunset-mobile@1x.jpg">
-              <img class="gallery-image__image" src="img/photo-sunset-desktop@1x.jpg" alt="Неродные просторы">
+              <source srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              <source srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="img/photo-sunset-mobile@1x.jpg, img/photo-sunset-mobile@2x.jpg 2x">
+              <img class="gallery-image__image" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280">
             </picture>
           </a>
           <div class="gallery-image__meta">
@@ -65,8 +62,8 @@
               <span class="gallery-image__title">Неродные просторы</span>
               <span class="gallery-image__author">Борис</span>
             </div>
-            <button class="gallery-image__button button button_theme_x-ray button_like" type="button">
-              <svg class="button__icon icon icon_fill_current" width="23" height="21">
+            <button class="gallery-image__button button button_theme_x-ray button_like" type="button" aria-label="Нравится">
+              <svg class="button__icon icon icon_fill_current" width="23" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icon-sprite.svg#icon-like"></use>
               </svg>
               <span class="button__text">1350</span>
@@ -76,13 +73,10 @@
         <div class="gallery-image">
           <a href="#">
             <picture class="gallery-image__picture">
-              <source srcset="img/photo-cactus-desktop@2x.jpg" media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-              <source srcset="img/photo-cactus-tablet@2x.jpg" media="(min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-              <source srcset="img/photo-cactus-mobile@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
-              <source srcset="img/photo-cactus-desktop@1x.jpg" media="(min-width: 1280px)">
-              <source srcset="img/photo-cactus-tablet@1x.jpg" media="(min-width: 768px)">
-              <source srcset="img/photo-cactus-mobile@1x.jpg">
-              <img class="gallery-image__image" src="img/photo-cactus-desktop@1x.jpg" alt="Местная растительность">
+              <source srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              <source srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="img/photo-cactus-mobile@1x.jpg, img/photo-cactus-mobile@2x.jpg 2x">
+              <img class="gallery-image__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" width="280" height="280">
             </picture>
           </a>
           <div class="gallery-image__meta">
@@ -90,8 +84,8 @@
               <span class="gallery-image__title">Местная растительность</span>
               <span class="gallery-image__author">Сергей</span>
             </div>
-            <button class="gallery-image__button button button_theme_x-ray button_like" type="button">
-              <svg class="button__icon icon icon_fill_current" width="23" height="21">
+            <button class="gallery-image__button button button_theme_x-ray button_like" type="button" aria-label="Нравится">
+              <svg class="button__icon icon icon_fill_current" width="23" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icon-sprite.svg#icon-like"></use>
               </svg>
               <span class="button__text">143</span>
@@ -101,13 +95,10 @@
         <div class="gallery-image">
           <a href="#">
             <picture class="gallery-image__picture">
-              <source srcset="img/photo-roads-desktop@2x.jpg" media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-              <source srcset="img/photo-roads-tablet@2x.jpg" media="(min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-              <source srcset="img/photo-roads-mobile@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
-              <source srcset="img/photo-roads-desktop@1x.jpg" media="(min-width: 1280px)">
-              <source srcset="img/photo-roads-tablet@1x.jpg" media="(min-width: 768px)">
-              <source srcset="img/photo-roads-mobile@1x.jpg">
-              <img class="gallery-image__image" src="img/photo-roads-desktop@1x.jpg" alt="Дорога на север">
+              <source srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              <source srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="img/photo-roads-mobile@1x.jpg, img/photo-roads-mobile@2x.jpg 2x">
+              <img class="gallery-image__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север" width="280" height="280">
             </picture>
           </a>
           <div class="gallery-image__meta">
@@ -115,8 +106,8 @@
               <span class="gallery-image__title">Дорога на север</span>
               <span class="gallery-image__author">Петр</span>
             </div>
-            <button class="gallery-image__button button button_theme_x-ray button_like" type="button">
-              <svg class="button__icon icon icon_fill_current" width="23" height="21">
+            <button class="gallery-image__button button button_theme_x-ray button_like" type="button" aria-label="Нравится">
+              <svg class="button__icon icon icon_fill_current" width="23" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icon-sprite.svg#icon-like"></use>
               </svg>
               <span class="button__text">96</span>
@@ -126,13 +117,10 @@
         <div class="gallery-image">
           <a href="#">
             <picture class="gallery-image__picture">
-              <source srcset="img/photo-bridge-desktop@2x.jpg" media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-              <source srcset="img/photo-bridge-tablet@2x.jpg" media="(min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-              <source srcset="img/photo-bridge-mobile@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
-              <source srcset="img/photo-bridge-desktop@1x.jpg" media="(min-width: 1280px)">
-              <source srcset="img/photo-bridge-tablet@1x.jpg" media="(min-width: 768px)">
-              <source srcset="img/photo-bridge-mobile@1x.jpg">
-              <img class="gallery-image__image" src="img/photo-bridge-desktop@1x.jpg" alt="Мост дьявола">
+              <source srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              <source srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="img/photo-bridge-mobile@1x.jpg, img/photo-bridge-mobile@2x.jpg 2x">
+              <img class="gallery-image__image" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280">
             </picture>
           </a>
           <div class="gallery-image__meta">
@@ -140,8 +128,8 @@
               <span class="gallery-image__title">Мост дьявола</span>
               <span class="gallery-image__author">Антон</span>
             </div>
-            <button class="gallery-image__button button button_theme_x-ray button_like" type="button">
-              <svg class="button__icon icon icon_fill_current" width="23" height="21">
+            <button class="gallery-image__button button button_theme_x-ray button_like" type="button" aria-label="Нравится">
+              <svg class="button__icon icon icon_fill_current" width="23" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icon-sprite.svg#icon-like"></use>
               </svg>
               <span class="button__text">254</span>
@@ -157,17 +145,14 @@
       </section>
       <div class="player">
         <picture class="player__picture">
-          <source srcset="img/video-desktop@2x.jpg" media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-          <source srcset="img/video-tablet@2x.jpg" media="(min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-          <source srcset="img/video-mobile@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
-          <source srcset="img/video-desktop@1x.jpg" media="(min-width: 1280px)">
-          <source srcset="img/video-tablet@1x.jpg" media="(min-width: 768px)">
-          <source srcset="img/video-mobile@1x.jpg">
-          <img class="player__cover" src="img/video-desktop@1x.jpg" alt="Обложка видео">
+          <source srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+          <source srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <source srcset="img/video-mobile@1x.jpg, img/video-mobile@2x.jpg 2x">
+          <img class="player__cover" src="img/video-mobile@1x.jpg" alt="Обложка видео" width="320" height="201">
         </picture>
         <div class="player__controls">
           <button class="player__button button button_theme_x-ray button_player" title="Повторить">
-            <svg class="button__icon icon icon_fill_current" width="16" height="20">
+            <svg class="button__icon icon icon_fill_current" width="16" height="20" aria-hidden="true" focusable="false">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#icon-video-replay"></use>
             </svg>
           </button>
@@ -178,12 +163,12 @@
               <span class="input__range"></span>
             </span>
           <button class="player__button button button_theme_x-ray button_player" title="Субтитры">
-            <svg class="button__icon icon icon_fill_current" width="32" height="20">
+            <svg class="button__icon icon icon_fill_current" width="32" height="20" aria-hidden="true" focusable="false">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#icon-video-subtitles"></use>
             </svg>
           </button>
           <button class="player__button button button_theme_x-ray button_player" title="Полный экран">
-            <svg class="button__icon icon icon_fill_current" width="20" height="20">
+            <svg class="button__icon icon icon_fill_current" width="20" height="20" aria-hidden="true" focusable="false">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#icon-video-fullscreen"></use>
             </svg>
           </button>
@@ -196,21 +181,21 @@
         <ul class="social__list">
           <li class="social__list-item">
             <a class="button button_theme_square" href="#" aria-label="Twitter">
-              <svg class="button__icon icon icon_fill_current" width="18" height="14">
+              <svg class="button__icon icon icon_fill_current" width="18" height="14" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icon-sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social__list-item">
             <a class="button button_theme_square" href="#" aria-label="Facebook">
-              <svg class="button__icon icon icon_fill_current" width="9" height="18">
+              <svg class="button__icon icon icon_fill_current" width="9" height="18" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icon-sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__list-item">
             <a class="button button_theme_square" href="#" aria-label="YouTube">
-              <svg class="button__icon icon icon_fill_current" width="20" height="14">
+              <svg class="button__icon icon icon_fill_current" width="20" height="14" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icon-sprite.svg#icon-youtube"></use>
               </svg>
             </a>
@@ -219,8 +204,8 @@
       </div>
       <div class="page-footer__created-by created-by">
         <span class="created-by__label">Разработано</span>
-        <a class="created-by__logo logo-link logo-link_html-academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="logo-link__image icon icon_fill_current" width="27" height="34">
+        <a class="created-by__logo logo-link logo-link_html-academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+          <svg class="logo-link__image icon icon_fill_current" width="27" height="34" role="img">
             <use xlink:href="img/icon-sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>

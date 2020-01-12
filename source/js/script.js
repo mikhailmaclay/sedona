@@ -1,4 +1,5 @@
 // Полифилы
+import './polyfills/picturefill.js';
 import './polyfills/svguse.js';
 
 // Помощники
