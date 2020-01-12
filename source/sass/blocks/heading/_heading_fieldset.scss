@@ -42,7 +42,7 @@
   }
 }
 
-.page_ie11 .fieldset_border .heading_fieldset {
+.page_ie11 .heading_border.heading_fieldset {
   @media #{$from-tablet} {
     max-width: 287px;
   }

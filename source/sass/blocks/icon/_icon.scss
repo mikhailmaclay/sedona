@@ -3,6 +3,8 @@
 .icon {
   $transition: $base-transition;
 
+  flex-shrink: 0;
+
   transition: opacity $transition;
 }
 
